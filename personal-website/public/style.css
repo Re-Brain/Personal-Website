@@ -10,13 +10,6 @@ body
     font-family: 'HinaMincho-Regular' !important;
 }
 
-* 
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 p
 {
     margin: 0 !important;
@@ -27,6 +20,7 @@ p
 ul
 {
     list-style-type: none;
+    margin: 0 !important;
 }
 
 li
@@ -54,7 +48,7 @@ li
     background-color: lightgreen;
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 20px !important;
     border: 1px solid black;
 }
 
@@ -193,6 +187,126 @@ li
 }
 
 .skill-item-content
+{
+    font-size: 20px;
+}
+
+/* Work Page */
+
+#work-container
+{
+    height: 1300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#work-header
+{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 10px !important;
+}
+
+#plantdatabase-container
+{
+    margin: 50px;
+    text-align: left;
+}
+
+#plantdatabase-header
+{
+    font-size: 36px;
+}
+
+#plantdatabase-content
+{
+    margin-top: 10px !important;
+    font-size: 28px;
+    margin-right: 50% !important;
+}
+
+#plantdatabase-tech
+{
+    font-size: 20px;
+    margin-top: 10px !important;
+}
+
+#MILK-container
+{
+    margin: 50px;
+    text-align: right;
+}
+
+#MILK-header
+{
+    font-size: 36px;
+}
+
+#MILK-content
+{
+    margin-top: 10px !important;
+    margin-left: 50% !important;
+    font-size: 28px;
+}
+
+#MILK-tech
+{
+    font-size: 20px;
+    margin-top: 10px !important;
+}
+
+#CS50-container
+{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#CS50-header
+{
+    font-size: 36px;
+    text-align: center;
+}
+
+#CS50-upper-items
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px !important;
+}
+
+#CS50-lower-items
+{
+    display: flex;
+    justify-content:center;
+    margin-top: 30px !important;
+}
+
+.CS50Project-container
+{
+    border: 1px solid black;
+    width: 320px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.CS50Project-header
+{
+    font-size: 32px;
+}
+
+.CS50Project-content
+{
+    font-size: 20px;
+    width: 300px;
+    height: 80px;
+    margin-top: 10px !important;
+}
+
+.CS50Project-link
 {
     font-size: 20px;
 }

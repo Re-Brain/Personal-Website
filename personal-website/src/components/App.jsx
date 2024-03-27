@@ -3,6 +3,8 @@ import Nav from "./Nav"
 import Home from "./Home";
 import About from "./About";
 import Skill from "./Skill";
+import Work from './Work';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App()
@@ -13,6 +15,7 @@ function App()
         <Home />
         <About/>
         <Skill/>
+        <Work/>
     </div>)
 }
 
