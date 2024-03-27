@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "./Nav"
 import Home from "./Home";
 import About from "./About";
+import Skill from "./Skill";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App()
@@ -11,6 +12,7 @@ function App()
         <Nav />
         <Home />
         <About/>
+        <Skill/>
     </div>)
 }
 

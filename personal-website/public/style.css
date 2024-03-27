@@ -55,6 +55,7 @@ li
     width: 100%;
     height: auto;
     padding: 20px;
+    border: 1px solid black;
 }
 
 #navbar p 
@@ -71,6 +72,7 @@ li
     justify-content: center;
     padding: 50px;
     height: 600px;
+    border: 1px solid black;
 }
 
 #profile-pic img
@@ -114,15 +116,20 @@ li
 }
 
 /* About Page */
+
 #about-container
 {
+    height: 700px;
+    border: 1px solid black;
     text-align: center;
-    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #about-title
 {
-    margin: 50px !important;
+    margin-bottom: 20px !important;
     font-size: 48px;
 }
 
@@ -130,6 +137,62 @@ li
 {
     font-size: 36px;
     width: 900px;
-    margin: 0 auto !important;
 }
 
+/* Skill Page */
+
+#skill-container
+{
+    height: 1500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skill-container > div
+{
+    width: 60%;
+}
+
+#skill-header
+{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 10px !important;
+}
+
+.skill-block
+{
+    width: 100%;
+}
+
+.skill-block-header
+{
+    font-size: 32px;
+}
+
+.skill-block-list
+{
+    display: flex;
+    margin: 20px 0;
+}
+
+.skill-item
+{
+    margin: 10px;
+    text-align: center;
+}
+
+.skill-item-img
+{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill-item-content
+{
+    font-size: 20px;
+}

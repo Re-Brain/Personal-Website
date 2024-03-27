@@ -1,6 +1,6 @@
 import React from "react";
-import Profilepic from "../components/Profilepic" 
-import Profiletext from "../components/Profiletext";
+import Profilepic from "./Profilepic" 
+import Profiletext from "./Profiletext";
 
 function Home()
 {
