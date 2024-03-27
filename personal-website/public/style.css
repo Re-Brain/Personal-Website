@@ -57,7 +57,7 @@ li
     font-size: 24px;
 }
 
-/* Home Page */
+/* Home Section */
 
 #home-container
 {
@@ -109,7 +109,7 @@ li
     font-size: 24px;
 }
 
-/* About Page */
+/* About Section */
 
 #about-container
 {
@@ -133,7 +133,7 @@ li
     width: 900px;
 }
 
-/* Skill Page */
+/* Skill Section */
 
 #skill-container
 {
@@ -191,7 +191,7 @@ li
     font-size: 20px;
 }
 
-/* Work Page */
+/* Work Section */
 
 #work-container
 {
@@ -310,3 +310,52 @@ li
 {
     font-size: 20px;
 }
+
+/* Experience Section */
+
+#experience-container
+{
+    height: 500px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#experience-container div
+{
+    width: 75%;
+}
+
+#experience-header
+{
+    text-align: center;
+    font-size: 48px;
+}
+
+.experience-item
+{
+    display: flex;
+    width: 100% !important;
+    margin-top: 50px;
+}
+
+.experience-item > div
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.experience-item-header
+{
+    font-size: 32px;
+}
+
+.experience-item-content
+{
+    font-size: 24px;
+}
+
+
