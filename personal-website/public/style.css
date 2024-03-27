@@ -70,6 +70,7 @@ li
     align-items: center;
     justify-content: center;
     padding: 50px;
+    height: 600px;
 }
 
 #profile-pic img
@@ -113,3 +114,22 @@ li
 }
 
 /* About Page */
+#about-container
+{
+    text-align: center;
+    height: 800px;
+}
+
+#about-title
+{
+    margin: 50px !important;
+    font-size: 48px;
+}
+
+#about-content
+{
+    font-size: 36px;
+    width: 900px;
+    margin: 0 auto !important;
+}
+
