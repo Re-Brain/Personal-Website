@@ -1,13 +1,14 @@
 import React from "react";
+import Nav from "./Nav"
+import Home from "./Home";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App()
 {
-    return (<div>
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>
-
-           
+    return (
+    <div id="page-container">
+        <Nav />
+        <Home />
     </div>)
 }
 

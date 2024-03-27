@@ -1,0 +1,115 @@
+/* Setting */
+
+@font-face {
+    font-family: 'HinaMincho-Regular';
+    src: url('../src/fonts/HinaMincho-Regular.ttf') format('truetype');
+}
+
+body
+{
+    font-family: 'HinaMincho-Regular' !important;
+}
+
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p
+{
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+li
+{
+    margin: 0;
+}
+
+/* Block Setting */
+
+#page-container
+{
+    max-width: 1459px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+#navbar 
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: lightgreen;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+#navbar p 
+{
+    font-size: 24px;
+}
+
+/* Home Page */
+
+#home-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+#profile-pic img
+{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 10px solid black;
+}
+
+#profile-text-container
+{
+    margin: 35px;
+}
+
+#profile-text-header
+{
+    font-size: 98px;
+}
+
+#profile-text-subheader
+{
+    font-size: 48px;
+}
+
+.profile-text-content
+{
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+#profile-text-button
+{
+    margin-top: 15px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+}
+
+/* About Page */
