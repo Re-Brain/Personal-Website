@@ -5,6 +5,7 @@ import About from "./About";
 import Skill from "./Skill";
 import Work from './Work';
 import Experience from "./Experience";
+import Contact from "./Contact";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,6 +19,7 @@ function App()
         <Skill/>
         <Work/>
         <Experience/>
+        <Contact/>
     </div>)
 }
 

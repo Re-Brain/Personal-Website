@@ -358,4 +358,42 @@ li
     font-size: 24px;
 }
 
+/* Contact Section */
 
+#contact-container
+{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+#contact-container > div
+{
+    width: 60%;
+}
+
+#contact-header
+{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 30px !important;
+}
+
+#contact-form > button
+{
+    margin: 0px 5px;
+    width: 100%;
+}
+ 
+.form-group
+{
+    margin: 10px 5px;
+}
+
+.form-group > textarea
+{
+    resize: none;
+}
