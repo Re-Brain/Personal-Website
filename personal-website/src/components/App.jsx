@@ -11,16 +11,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App()
 {
-    return (
-    <div id="page-container">
-        <Nav />
-        <Home />
-        <About/>
-        <Skill/>
-        <Work/>
-        <Experience/>
-        <Contact/>
-    </div>)
+    return (   
+        <div id="page-container">
+            <Nav />
+            <Home />
+            <About/>
+            <Skill/>
+            <Work/>
+            <Experience/>
+            <Contact/>
+        </div>
+    )
 }
 
 export default App;

@@ -9,5 +9,47 @@
 <body>
     <div id="root"></div>
     <script src="../src/index.js" type="text/jsx"></script>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal()
+        {
+            var revealsRight = document.querySelectorAll('.reveal-right');
+            var revealsLeft = document.querySelectorAll('.reveal-left');
+
+            for(var i = 0; i < revealsRight.length; i++)
+            {
+                var windowHeight = window.innerHeight;
+                var revealTop = revealsRight[i].getBoundingClientRect().top;
+                var revealPoint = 150;
+
+                if(revealTop < windowHeight - revealTop)
+                {
+                    revealsRight[i].classList.add('active');
+                }
+                else
+                {
+                    revealsRight[i].classList.remove('active')
+                }
+            }
+
+            for(var i = 0; i < revealsLeft.length; i++)
+            {
+                var windowHeight = window.innerHeight;
+                var revealTop = revealsLeft[i].getBoundingClientRect().top;
+                var revealPoint = 150;
+
+                if(revealTop < windowHeight - revealTop)
+                {
+                    revealsLeft[i].classList.add('active');
+                }
+                else
+                {
+                    revealsLeft[i].classList.remove('active')
+                }
+            }
+        }
+    </script>
 </body>
 </html>

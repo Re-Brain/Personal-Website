@@ -6,7 +6,7 @@ function Imageprocessing()
     return (
         <div className="project-container">
             <div className="project-right-display">
-                <img className="project-img"src={img}/>
+                <img className="project-img"src={img} alt="Comparison between two faces"/>
             </div>
             <div className="project-right-detail">
                 <p className="project-header">Introduction to Image Processing Term Project</p>

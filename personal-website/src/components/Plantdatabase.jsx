@@ -17,7 +17,7 @@ function Plantdatabase()
                 <p className="project-tech">Database: MySQL</p>
            </div>
            <div className="project-right-display">
-                <img className="project-img"src={img}/>
+                <img className="project-img"src={img} alt="One of the data inside the database"/>
            </div>
           
         </div>
