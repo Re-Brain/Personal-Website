@@ -16,6 +16,7 @@ import Git from "../images/Git.png";
 import Github from "../images/Github.png";
 import Jupyter from "../images/Jupyter.png";
 import Googlecollab from "../images/GoogleCollab.png";
+import SwiftUI from "../images/SwiftUI.png"
 
 function Skill()
 {
@@ -29,6 +30,9 @@ function Skill()
         ]},
         {header : "Back-End", items : 
             [{name : "Django", img : Django},
+        ]},
+        {header : "Mobile-Development", items : 
+            [{name : "SwiftUI", img : SwiftUI},
         ]},
         {header : "Machine Learning", items : 
             [{name : "Tensorflow", img : Tensorflow},

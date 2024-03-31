@@ -8,6 +8,8 @@
 body
 {
     font-family: 'HinaMincho-Regular' !important;
+    background-image: url('images/Background.png') ;
+    background-color: green;
 }
 
 p
@@ -45,11 +47,9 @@ li
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    background-color: lightgreen;
     width: 100%;
     height: auto;
-    padding: 20px !important;
-    border: 1px solid black;
+    padding: 40px !important;
 }
 
 #navbar p 
@@ -66,7 +66,6 @@ li
     justify-content: center;
     padding: 50px;
     height: 600px;
-    border: 1px solid black;
 }
 
 #profile-pic img
@@ -103,18 +102,17 @@ li
 #profile-text-button
 {
     margin-top: 15px;
-    padding: 10px 30px;
+    padding: 10px 20px;
     border-radius: 10px;
     border: none;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 /* About Section */
 
 #about-container
 {
-    height: 700px;
-    border: 1px solid black;
+    height: 500px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -124,12 +122,12 @@ li
 #about-title
 {
     margin-bottom: 20px !important;
-    font-size: 48px;
+    font-size: 40px;
 }
 
 #about-content
 {
-    font-size: 36px;
+    font-size: 32px;
     width: 900px;
 }
 
@@ -137,8 +135,7 @@ li
 
 #skill-container
 {
-    height: 1500px;
-    border: 1px solid black;
+    height: 1700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,18 +149,19 @@ li
 #skill-header
 {
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
     margin-bottom: 10px !important;
 }
 
 .skill-block
 {
     width: 100%;
+    /* border: 1px solid black; */
 }
 
 .skill-block-header
 {
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .skill-block-list
@@ -195,8 +193,7 @@ li
 
 #work-container
 {
-    height: 1300px;
-    border: 1px solid black;
+    height: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,55 +202,57 @@ li
 #work-header
 {
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
     margin-bottom: 10px !important;
 }
 
 #plantdatabase-container
 {
     margin: 50px;
+    margin-left: 200px;
     text-align: left;
 }
 
 #plantdatabase-header
 {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 #plantdatabase-content
 {
     margin-top: 10px !important;
-    font-size: 28px;
+    font-size: 24px;
     margin-right: 50% !important;
 }
 
 #plantdatabase-tech
 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px !important;
 }
 
 #MILK-container
 {
     margin: 50px;
+    margin-right: 200px;
     text-align: right;
 }
 
 #MILK-header
 {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 #MILK-content
 {
     margin-top: 10px !important;
     margin-left: 50% !important;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 #MILK-tech
 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px !important;
 }
 
@@ -265,7 +264,7 @@ li
 
 #CS50-header
 {
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
 }
 
@@ -285,22 +284,24 @@ li
 
 .CS50Project-container
 {
-    border: 1px solid black;
-    width: 320px;
-    height: 200px;
+    background-color: #262626;
+    color: white;
+    width: 350px;
+    height: 220px;
     padding: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 10px;
 }
 
 .CS50Project-header
 {
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .CS50Project-content
 {
-    font-size: 20px;
+    font-size: 18px;
     width: 300px;
     height: 80px;
     margin-top: 10px !important;
@@ -308,16 +309,20 @@ li
 
 .CS50Project-link
 {
-    font-size: 20px;
+    font-size: 18px;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #262626;
 }
 
 /* Experience Section */
 
 #experience-container
 {
-    height: 500px;
+    height: 450px;
     width: 100%;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,7 +336,7 @@ li
 #experience-header
 {
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .experience-item
@@ -350,24 +355,23 @@ li
 
 .experience-item-header
 {
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .experience-item-content
 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 /* Contact Section */
 
 #contact-container
 {
-    height: 700px;
+    height: 600px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
 }
 
 #contact-container > div
@@ -378,7 +382,7 @@ li
 #contact-header
 {
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
     margin-bottom: 30px !important;
 }
 
@@ -396,4 +400,12 @@ li
 .form-group > textarea
 {
     resize: none;
+}
+
+.form-control:focus 
+{
+    border-color:rgba(100,100,100,1)!important;
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+     box-shadow: none!important;
 }

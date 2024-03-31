@@ -6,7 +6,7 @@ function CS50Project(props)
         <div className="CS50Project-container">
            <p className="CS50Project-header">{props.header}</p>
            <p className="CS50Project-content">{props.content}</p>
-           <p className="CS50Project-link">{props.link}</p>
+           <a className="CS50Project-link" href={props.link}>Project Link</a>
         </div>
     )
 }

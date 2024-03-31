@@ -10,7 +10,6 @@ function Nav()
                 <li><p>Skills</p></li>
                 <li><p>Work</p></li>
                 <li><p>Experience</p></li>
-                <li><p>Quotes</p></li>
                 <li><p>Contact</p></li>
             </ul>
         </nav>

@@ -19,7 +19,7 @@ function Contact(props)
                     <div class="form-group">
                         <textarea class="form-control" rows="10"placeholder="Content"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-dark">Submit</button>
                 </form>
             </div>
             

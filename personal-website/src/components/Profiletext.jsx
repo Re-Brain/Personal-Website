@@ -8,7 +8,7 @@ function Profiletext()
             <p id="profile-text-subheader">Developer & AI</p>
             <p className="profile-text-content">Bachelor Degree in Computer Science and Information Engineering</p>
             <p className="profile-text-content">National Dong Hwa University</p>
-            <button id="profile-text-button">Contact Me</button>
+            <button type="submit" id="profile-text-button" class="btn btn-dark">Contact Me</button>
         </div>
     )
 }
