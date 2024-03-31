@@ -5,12 +5,12 @@ function Nav()
     return (
         <nav className="">
             <ul id="navbar">
-                <li><p>Home</p></li>
-                <li><p>About</p></li>
-                <li><p>Skills</p></li>
-                <li><p>Work</p></li>
-                <li><p>Experience</p></li>
-                <li><p>Contact</p></li>
+                <li><a href="#home-container">Home</a></li>
+                <li><a href="#about-container">About</a></li>
+                <li><a href="#skill-container" >Skill</a></li>
+                <li><a href="#work-container">Work</a></li>
+                <li><a href="#experience-container">Experience</a></li>
+                <li><a href="#contact-container">Contact</a></li>
             </ul>
         </nav>
     )

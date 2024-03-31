@@ -2,6 +2,8 @@ import React from "react";
 import Plantdatabase from "./Plantdatabase";
 import MILK from "./MILK";
 import CS50 from "./CS50";
+import SwiftUI from "./SwiftUI";
+import Imageprocessing from "./Imageprocessing";
 
 function Work()
 {
@@ -11,6 +13,8 @@ function Work()
                 <p id="work-header">Work</p>
                 <Plantdatabase/>
                 <MILK/>
+                <SwiftUI/>
+                <Imageprocessing/>
                 <CS50/>
             </div>
            

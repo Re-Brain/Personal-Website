@@ -4,14 +4,14 @@ import CS50Project from "./CS50Project";
 function CS50()
 {
     const upperItems = [
-        {header : "Project 0: Search", content : "Design a front-end for Google Search , Google Image Search, and Google Advance Search", link : "https://github.com/Re-Brain/CS50Web-Search"},
-        {header : "Project 1: Wiki", content : "Design a Wikipedia-like online encyclopedia", link : "https://github.com/Re-Brain/CS50Web-Wiki"},
-        {header : "Project 2: Commerce", content : "Design an eBay-like e-commerce auction site", link : "https://github.com/Re-Brain/CS50Web-Commerce"}
+        {header : "Project 0: Search", content : "Design a front-end for Google Search , Google Image Search, and Google Advance Search", github : "https://github.com/Re-Brain/CS50Web-Search", video : "https://www.youtube.com/watch?v=MFwsdcJfaPA"},
+        {header : "Project 1: Wiki", content : "Design a Wikipedia-like online encyclopedia", github : "https://github.com/Re-Brain/CS50Web-Wiki" , video : "https://youtu.be/geZ25ztPPwc?si=8L6zYXKueyBjOI9B"},
+        {header : "Project 2: Commerce", content : "Design an eBay-like e-commerce auction site", github : "https://github.com/Re-Brain/CS50Web-Commerce" , video : "https://youtu.be/Sb5XIIteNcc?si=Tfgvk_994UvZlNZt"}
     ]
 
     const lowerItems = [
-        {header : "Project 3: Mail", content : "Design a front-end for an email client that makes API calls to send and receive emails", link : "https://github.com/Re-Brain/CS50Web-Mail"},
-        {header : "Project 4: Network", content : "Design a Twitter-like social network website for making posts and following users.", link : "https://github.com/Re-Brain/CS50Web-Network"}
+        {header : "Project 3: Mail", content : "Design a front-end for an email client that makes API calls to send and receive emails", github : "https://github.com/Re-Brain/CS50Web-Mail" , video : "https://youtu.be/XvyArKlHbks?si=2mzwinszO9jAVc6d"},
+        {header : "Project 4: Network", content : "Design a Twitter-like social network website for making posts and following users.", github : "https://github.com/Re-Brain/CS50Web-Network" , video : "https://youtu.be/aylzFQNIINk?si=OQGi9fe1C1fPJeGx"}
     ]
 
     return (
@@ -24,6 +24,8 @@ function CS50()
                             key = {index}
                             header = {item.header}
                             content = {item.content}
+                            github = {item.github}
+                            video = {item.video}
                             link = {item.link}
                         />) 
                     })

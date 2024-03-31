@@ -37,6 +37,7 @@ li
     max-width: 1459px;
     width: 100%;
     margin: 0 auto;
+    border: 1px solid black;
 }
 
 /* Navbar */
@@ -52,9 +53,11 @@ li
     padding: 40px !important;
 }
 
-#navbar p 
+#navbar a 
 {
     font-size: 24px;
+    text-decoration: none;
+    color: #000;
 }
 
 /* Home Section */
@@ -193,7 +196,7 @@ li
 
 #work-container
 {
-    height: 1200px;
+    height: 2100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,54 +209,68 @@ li
     margin-bottom: 10px !important;
 }
 
-#plantdatabase-container
+.project-container
 {
+    display: flex;
+    justify-self: center;
+    align-items: center;
     margin: 50px;
-    margin-left: 200px;
+}
+
+.project-left-detail, .project-right-detail
+{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #262626;
+    color: white;
+    border-radius: 10px;
+}
+
+.project-left-detail
+{
     text-align: left;
 }
 
-#plantdatabase-header
+.project-right-detail
 {
-    font-size: 32px;
+    text-align: right;
 }
 
-#plantdatabase-content
+.project-header
+{
+    font-size: 30px;
+}
+
+.project-content
 {
     margin-top: 10px !important;
     font-size: 24px;
     margin-right: 50% !important;
+    width: 100%;
 }
 
-#plantdatabase-tech
+.project-tech
 {
     font-size: 18px;
     margin-top: 10px !important;
 }
 
-#MILK-container
+.project-right-display, .project-left-display  
 {
-    margin: 50px;
-    margin-right: 200px;
-    text-align: right;
+    padding: 25px;
 }
 
-#MILK-header
+.project-img
 {
-    font-size: 32px;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
 }
 
-#MILK-content
+video
 {
-    margin-top: 10px !important;
-    margin-left: 50% !important;
-    font-size: 24px;
-}
-
-#MILK-tech
-{
-    font-size: 18px;
-    margin-top: 10px !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
 }
 
 #CS50-container
@@ -307,12 +324,20 @@ li
     margin-top: 10px !important;
 }
 
+.CS50Project-link-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .CS50Project-link
 {
     font-size: 18px;
     background-color: white;
     text-decoration: none;
     padding: 10px;
+    margin: 5px;
     border-radius: 10px;
     color: #262626;
 }

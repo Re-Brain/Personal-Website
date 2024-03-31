@@ -56,7 +56,7 @@ function Skill()
     return (
        <div id="skill-container">
             <div>
-                <p id="skill-header">Skills</p>
+                <p id="skill-header">Skill</p>
                 {
                     items.map((item, index) => {
                         return (
