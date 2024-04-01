@@ -1,5 +1,11 @@
 /* Setting */
 
+html
+{
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 70px);
+}
+
 @font-face {
     font-family: 'HinaMincho-Regular';
     src: url('../src/fonts/HinaMincho-Regular.ttf') format('truetype');
@@ -33,7 +39,7 @@ li
 
 /* Block Setting */
 
-#page-container
+.page-container
 {
     max-width: 1459px;
     width: 100%;
@@ -44,6 +50,15 @@ li
 }
 
 /* Navbar */
+#nav-container
+{
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 #navbar 
 {
@@ -51,16 +66,17 @@ li
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    max-width: 1459px;
     width: 100%;
     height: auto;
-    padding: 40px !important;
+    padding: 25px !important;
 }
 
 #navbar a 
 {
     font-size: 24px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 /* Home Section */
@@ -436,4 +452,10 @@ video
     -webkit-box-shadow: none!important;
     -moz-box-shadow: none!important;
      box-shadow: none!important;
+}
+
+/* Footer Section */
+#footer
+{
+    padding: 30px;
 }

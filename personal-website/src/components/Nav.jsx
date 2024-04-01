@@ -4,13 +4,13 @@ function Nav()
 {
     return (
         <nav id="nav-container">
-            <ul id="navbar">
-                <li><a href="#home-container">Home</a></li>
-                <li><a href="#about-container">About</a></li>
-                <li><a href="#skill-container" >Skill</a></li>
-                <li><a href="#work-container">Work</a></li>
-                <li><a href="#experience-container">Experience</a></li>
-                <li><a href="#contact-container">Contact</a></li>
+            <ul id="navbar" >
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill" >Skill</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     )
