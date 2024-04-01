@@ -5,8 +5,8 @@ function Skilllist(props)
 {
     return (
         <div className="skill-block">
-            <p className="skill-block-header">{props.header}</p>
-            <div className="skill-block-list">
+            <p className={`skill-block-header-${props.direction}`}>{props.header}</p>
+            <div className={`skill-block-list-${props.direction}`}>
                 {
                     props.items.map((item,index) => {
                         return (

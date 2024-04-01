@@ -23,15 +23,35 @@
     width: 100%;
 }
 
-.skill-block-header
+.skill-block-header-left, .skill-block-header-right
 {
     font-size: 28px;
 }
 
-.skill-block-list
+.skill-block-header-left
+{
+    text-align: left;
+}
+
+.skill-block-header-right
+{
+    text-align: right;
+}
+
+.skill-block-list-left, .skill-block-list-right
 {
     display: flex;
     margin: 20px 0;
+}
+
+.skill-block-list-left
+{
+    justify-content: start;
+}
+
+.skill-block-list-right
+{
+    justify-content: end;
 }
 
 .skill-item

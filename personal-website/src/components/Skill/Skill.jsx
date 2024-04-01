@@ -21,31 +21,31 @@ import SwiftUI from "../../images/SwiftUI.png"
 function Skill()
 {
     const items = [
-        {header : "Front-End", items : 
+        {header : "Front-End", direction : "left", items : 
             [{name : "HTML", img : HTML},
              {name : "CSS", img : CSS},
              {name : "JavaScript", img : Javascript},
              {name : "React", img : Reactlogo},
              {name : "Bootstrap", img : Bootstrap}
         ]},
-        {header : "Back-End", items : 
+        {header : "Back-End", direction : "right", items : 
             [{name : "Django", img : Django},
         ]},
-        {header : "Mobile-Development", items : 
+        {header : "Mobile-Development", direction : "left", items : 
             [{name : "SwiftUI", img : SwiftUI},
         ]},
-        {header : "Machine Learning", items : 
+        {header : "Machine Learning", direction : "right", items : 
             [{name : "Tensorflow", img : Tensorflow},
         ]},
-        {header : "Database", items : 
+        {header : "Database", direction : "left", items : 
             [{name : "MySQL", img : MySQL},
         ]},
-        {header : "Programming Languages", items : 
+        {header : "Programming Languages", direction : "right", items : 
             [{name : "C", img : C},
             {name : "C++", img : CPP},
             {name : "Python", img : Python}
         ]},
-        {header : "Tools", items : 
+        {header : "Tools", direction : "left" , items : 
             [{name : "Git", img : Git},
             {name : "Github", img : Github},
             {name : "Jupyter Notebook", img : Jupyter},
@@ -64,6 +64,7 @@ function Skill()
                                 key={index}
                                 header={item.header}
                                 items={item.items}
+                                direction={item.direction}
                             />
                         )
                     })
