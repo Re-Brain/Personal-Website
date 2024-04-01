@@ -15,7 +15,6 @@ body
 {
     font-family: 'HinaMincho-Regular' !important;
     background-image: url('images/Background.png');
-    background-color: green;
     overflow: auto !important;
 }
 
@@ -283,12 +282,14 @@ li
     width: 600px;
     height: 300px;
     border-radius: 10px;
+    border: 5px solid black;
 }
 
 video
 {
     object-fit: cover !important;
     border-radius: 10px !important;
+    border: 5px solid black;
 }
 
 #CS50-container
@@ -373,7 +374,7 @@ video
 
 #experience-container div
 {
-    width: 75%;
+    width: 80%;
 }
 
 #experience-header
@@ -398,12 +399,21 @@ video
 
 .experience-item-header
 {
-    font-size: 28px;
+    font-size: 32px;
+}
+
+.experience-item-list
+{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
 }
 
 .experience-item-content
 {
-    font-size: 20px;
+    font-size: 24px;
+    padding: 20px !important;
 }
 
 /* Contact Section */

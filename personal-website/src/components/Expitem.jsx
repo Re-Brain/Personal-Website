@@ -8,7 +8,15 @@ function Expitem(props)
                 <p className="experience-item-header">{props.header}</p>
             </div>
             <div>
-                {props.content}
+                <ul className="experience-item-list">
+                {
+                    props.content.map((item, index) => 
+                    {
+                        return <li><p className="experience-item-content">{item}</p></li>
+                    })
+                }
+                </ul>
+                
             </div>
         </div>
     )

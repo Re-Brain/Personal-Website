@@ -6,22 +6,13 @@ function Experience()
     const items = [
         {
             header : "Teacher Assistant Lab of Programming", 
-            content : (
-                <p className="experience-item-content">
-                    Provide hands-on support to students in the course <br/><br/>
-                    Explain and clarify programming concepts and assignments in C/C++ <br/><br/>
-                    Ensure the students understand their code in each programming assignment
-                </p>
-            )
+            content : ["Provide hands-on support to students in the course",
+                       "Explain and clarify programming concepts and assignments in C/C++",
+                       "Ensure the students understand their code in each programming assignment"]
         },
         {
             header : "House Keeping", 
-            content : (
-                <p className="experience-item-content">
-                    Organize and maintained clean rooms to create a <br/>
-                    welcoming and comfortable environment for guests
-                </p> 
-            )
+            content : ["Organize and maintained clean rooms to create a welcoming and comfortable environment for guests"]
         }
     ]
     return (
