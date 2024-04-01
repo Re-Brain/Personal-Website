@@ -14,7 +14,8 @@ function MILK()
                 <p className="project-header">Third Year Project</p>
                 <p className="project-header">Management and Identification for Livestock Keeping</p>
                 <p className="project-content">
-                    Responsible for training a cow face detection model using YOLOV8 and classification model to identify the ID based on the detcted face.
+                    In charge of utilizing YOLOV8 to train a cow face detection model and a classification model to determine the 
+                    ID based on the detected face.
                 </p>
                 <p className="project-tech">Machine Learning Framwork : Tensorflow</p>
                 <p className="project-tech">Tools: Jupyter Notebook, Google Colab</p>

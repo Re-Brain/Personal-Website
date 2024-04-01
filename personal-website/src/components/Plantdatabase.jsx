@@ -8,9 +8,9 @@ function Plantdatabase()
            <div className="project-left-detail">
                 <p className="project-header">Rajamangalaphisek Education Park Plant Database</p>
                 <p className="project-content">
-                        Design a plant database for Rajamangalaphisek Education Park at Sukhothai Thammathirat Open University, 
-                        complete with an administration system allowing for functions such as adding new plants, editing existing plant data, 
-                        and deleting plant records.
+                    Create a plant database with an administration system that enables users to add new plants,
+                     amend current plant data, and remove plant records for the Rajamangalaphisek Education Park 
+                     at Sukhothai Thammathirat Open University.
                 </p>
                 <p className="project-tech">Frontend: HTML, CSS, JavaScript</p>
                 <p className="project-tech">Backend: Django</p>

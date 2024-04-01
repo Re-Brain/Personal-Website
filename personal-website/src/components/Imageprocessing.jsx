@@ -11,7 +11,9 @@ function Imageprocessing()
             <div className="project-right-detail">
                 <p className="project-header">Introduction to Image Processing Term Project</p>
                 <p className="project-content">
-                    Create a face-matching program in Python using the OpenCV, Matplotlib, and NumPy frameworks.
+                    Make a face-matching program to determine whether or not the provided image is in the database. 
+                    Indicate the identity of the person in the picture if it is contained within the database. 
+                    Indicate which individual in the photo is similar to which person in the database if the image is not contained in the database.
                 </p>
                 <p className="project-tech">Language : Python</p>
                 <p className="project-tech">Library : OpenCV, Matplotlib, NumPy</p>
