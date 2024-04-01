@@ -1,0 +1,53 @@
+#experience-container
+{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#experience-container div
+{
+    width: 80%;
+}
+
+#experience-header
+{
+    text-align: center;
+    font-size: 40px;
+}
+
+.experience-item
+{
+    display: flex;
+    width: 100% !important;
+    margin-top: 50px;
+}
+
+.experience-item > div
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.experience-item-header
+{
+    font-size: 32px;
+}
+
+.experience-item-list
+{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.experience-item-content
+{
+    font-size: 24px;
+    padding: 20px !important;
+}

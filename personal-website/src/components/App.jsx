@@ -1,11 +1,11 @@
 import React from "react";
-import Nav from "./Nav"
-import Home from "./Home";
-import About from "./About";
-import Skill from "./Skill";
-import Work from './Work';
-import Experience from "./Experience";
-import Contact from "./Contact";
+import Nav from "./Nav/Nav"
+import Home from "./Home/Home";
+import About from "./About/About";
+import Skill from "./Skill/Skill";
+import Work from './Work/Work';
+import Experience from "./Experience/Experience";
+import Contact from "./Contact/Contact";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 

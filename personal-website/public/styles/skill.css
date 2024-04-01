@@ -1,0 +1,54 @@
+#skill-container
+{
+    height: 1700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skill-container > div
+{
+    width: 60%;
+}
+
+#skill-header
+{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px !important;
+}
+
+.skill-block
+{
+    width: 100%;
+}
+
+.skill-block-header
+{
+    font-size: 28px;
+}
+
+.skill-block-list
+{
+    display: flex;
+    margin: 20px 0;
+}
+
+.skill-item
+{
+    margin: 10px;
+    text-align: center;
+}
+
+.skill-item-img
+{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill-item-content
+{
+    font-size: 20px;
+}

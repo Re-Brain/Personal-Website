@@ -1,22 +1,22 @@
 import React from "react";
 import Skilllist from "./Skilllist";
 
-import HTML from "../images/HTML.png";
-import CSS from "../images/CSS.png";
-import Javascript from "../images/JS.png";
-import Reactlogo from "../images/React.png";
-import Bootstrap from "../images/Bootstrap.png";
-import Django from "../images/Django.png";
-import Tensorflow from "../images/Tensorflow.png";
-import MySQL from "../images/MySQL.png";
-import C from "../images/C.png";
-import CPP from "../images/C++.png";
-import Python from "../images/Python.png";
-import Git from "../images/Git.png";
-import Github from "../images/Github.png";
-import Jupyter from "../images/Jupyter.png";
-import Googlecollab from "../images/GoogleCollab.png";
-import SwiftUI from "../images/SwiftUI.png"
+import HTML from "../../images/HTML.png";
+import CSS from "../../images/CSS.png";
+import Javascript from "../../images/JS.png";
+import Reactlogo from "../../images/React.png";
+import Bootstrap from "../../images/Bootstrap.png";
+import Django from "../../images/Django.png";
+import Tensorflow from "../../images/Tensorflow.png";
+import MySQL from "../../images/MySQL.png";
+import C from "../../images/C.png";
+import CPP from "../../images/C++.png";
+import Python from "../../images/Python.png";
+import Git from "../../images/Git.png";
+import Github from "../../images/Github.png";
+import Jupyter from "../../images/Jupyter.png";
+import Googlecollab from "../../images/GoogleCollab.png";
+import SwiftUI from "../../images/SwiftUI.png"
 
 function Skill()
 {

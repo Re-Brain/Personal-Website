@@ -1,0 +1,49 @@
+#home-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    height: 600px;
+}
+
+#profile-pic img
+{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 10px solid black;
+}
+
+#profile-text-container
+{
+    margin: 35px;
+}
+
+#profile-text-header
+{
+    font-size: 98px;
+}
+
+#profile-text-subheader
+{
+    font-size: 48px;
+}
+
+.profile-text-content
+{
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+#profile-text-button
+{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: black;
+}

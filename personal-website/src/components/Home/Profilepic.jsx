@@ -1,5 +1,5 @@
 import React from "react";
-import src from "../images/profile_og.jpg"
+import src from "../../images/profile.jpg"
 
 function Profilepic()
 {

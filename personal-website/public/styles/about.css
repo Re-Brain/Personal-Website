@@ -1,0 +1,29 @@
+#about-container
+{
+    height: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-container div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-title
+{
+    margin-bottom: 20px !important;
+    font-size: 40px;
+}
+
+#about-content
+{
+    font-size: 32px;
+    width: 75%;
+    text-align: justify;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../images/MILK.mp4"
+import video from "../../images/MILK.mp4"
 
 function MILK()
 {

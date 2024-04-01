@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../images/PlantDBS.png"
+import img from "../../images/PlantDBS.png"
 
 function SwiftUI()
 {

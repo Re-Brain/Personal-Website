@@ -1,0 +1,148 @@
+#work-container
+{
+    height: 2400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#work-header
+{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px !important;
+}
+
+.project-container
+{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.project-left-detail, .project-right-detail
+{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.project-left-detail
+{
+    text-align: left;
+}
+
+.project-right-detail
+{
+    text-align: right;
+}
+
+.project-header
+{
+    font-size: 30px;
+}
+
+.project-content
+{
+    font-size: 24px;
+    width: 100%;
+    margin-top: 10px !important;
+    text-align: justify;
+}
+
+.project-tech
+{
+    font-size: 20px;
+    margin-top: 10px !important;
+}
+
+.project-right-display, .project-left-display  
+{
+    padding: 25px;
+}
+
+.project-img
+{
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+video
+{
+    object-fit: cover !important;
+    border-radius: 10px !important;
+    border: 5px solid black;
+}
+
+#CS50-container
+{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#CS50-header
+{
+    font-size: 32px;
+    text-align: center;
+}
+
+#CS50-upper-items
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px !important;
+}
+
+#CS50-lower-items
+{
+    display: flex;
+    justify-content:center;
+    margin-top: 30px !important;
+}
+
+.CS50Project-container
+{
+    background-color: black;
+    color: white;
+    width: 350px;
+    height: 220px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.CS50Project-header
+{
+    font-size: 24px;
+}
+
+.CS50Project-content
+{
+    font-size: 18px;
+    width: 300px;
+    height: 80px;
+    margin-top: 10px !important;
+}
+
+.CS50Project-link-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CS50Project-link
+{
+    font-size: 18px;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    color: #262626;
+}
