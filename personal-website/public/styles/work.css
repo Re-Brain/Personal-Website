@@ -155,7 +155,7 @@ video
 
     #work-container
     {
-        height: 4300px;
+        height: 4100px;
     }
 
     .project-container:nth-child(even)
@@ -194,6 +194,11 @@ video
 }
 
 @media (max-width: 800px) {
+
+    #work-container
+    {
+        height: 3900px;
+    }
 
     .project-header
     {

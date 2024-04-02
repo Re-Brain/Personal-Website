@@ -24,3 +24,19 @@
 {
     color: white;
 }
+
+@media (max-width: 1100px) {
+
+    #footer-list
+    {
+        width: 20%;
+    }
+}
+
+@media (max-width: 500px) 
+{
+    #footer-list
+    {
+        width: 35%;
+    }
+}

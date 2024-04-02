@@ -101,7 +101,26 @@
 
     #about-container
     {
-        height: 600px;
+        height: 1900px;
+    }
+
+    #about-hobby-list
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-info-content
+    {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #about-container
+    {
+        height: 2000px;
     }
 }
 
@@ -109,7 +128,7 @@
 {
     #about-container
     {
-        height: 500px;
+        height: 2500px;
     }
 
     #about-title

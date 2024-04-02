@@ -96,6 +96,14 @@
     }
 }
 
+@media (max-width: 800px) {
+
+    #skill-container
+    {
+        height: 1800px;
+    }
+}
+
 @media (max-width: 500px) 
 {
     #skill-container
