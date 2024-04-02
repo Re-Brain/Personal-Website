@@ -6,6 +6,7 @@ import Skill from "./Skill/Skill";
 import Work from './Work/Work';
 import Experience from "./Experience/Experience";
 import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -33,10 +34,8 @@ function App()
                 <section id="contact">
                     <Contact/>
                 </section>
-                <section id="footer">
-                    
-                </section>
             </div>
+            <Footer/>
         </div>
     )
 }

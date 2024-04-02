@@ -16,7 +16,7 @@ function Experience()
         }
         ,
         {
-            header : "Web Database Developer", 
+            header : "Web-based Database Developer", 
             content : ["Join the development team of Sukhothai Thammathirat Open University's web-based plant database.",
                        "Assign to develop the university's Rajamangalaphisek Education Park plant database."]
         }
