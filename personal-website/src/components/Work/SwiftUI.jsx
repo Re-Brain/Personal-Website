@@ -16,6 +16,11 @@ function SwiftUI()
                     It also supports multiple users. 
                 </p>
                 <p className="project-tech">Framework : SwiftUI</p>
+                <p className="project-tech">
+                    <a href="https://github.com/Re-Brain/E-Commerce-SwiftUI" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </p>
             </div>
             <div className="project-right-display">
                 <img className="project-img"src={img} alt="Display All item page in the application"/>

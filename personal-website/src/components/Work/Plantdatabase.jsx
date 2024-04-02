@@ -15,6 +15,11 @@ function Plantdatabase()
                 <p className="project-tech">Frontend: HTML, CSS, JavaScript</p>
                 <p className="project-tech">Backend: Django</p>
                 <p className="project-tech">Database: MySQL</p>
+                <p className="project-tech">
+                    <a href="https://github.com/Re-Brain/PlantDatabase" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </p>
            </div>
            <div className="project-right-display">
                 <img className="project-img"src={img} alt="One of the data inside the database"/>

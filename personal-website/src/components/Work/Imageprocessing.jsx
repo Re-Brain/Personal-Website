@@ -17,6 +17,11 @@ function Imageprocessing()
                 </p>
                 <p className="project-tech">Language : Python</p>
                 <p className="project-tech">Library : OpenCV, Matplotlib, NumPy</p>
+                <p className="project-tech">
+                    <a href="https://github.com/Re-Brain/Face-Matching-Program" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </p>
             </div>
             
      </div>
