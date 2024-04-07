@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/crypto-app-react/static/css/main.d5289b2f.css",
+    "main.js": "/crypto-app-react/static/js/main.48c3d6ce.js",
+    "static/media/PlantDBS.png": "/crypto-app-react/static/media/PlantDBS.8332b8a235daddb2abaf.png",
+    "static/media/MILK.mp4": "/crypto-app-react/static/media/MILK.a19fea2087d61873c542.mp4",
+    "static/media/React.png": "/crypto-app-react/static/media/React.c1400a56b9ac0900068f.png",
+    "static/media/profile.jpg": "/crypto-app-react/static/media/profile.994476f2ad13ff34caaf.jpg",
+    "static/media/faceSimilarity.png": "/crypto-app-react/static/media/faceSimilarity.5c38035d312041dfda06.png",
+    "static/media/Travel.jpg": "/crypto-app-react/static/media/Travel.e70926fb417d7db45490.jpg",
+    "static/media/Food.jpg": "/crypto-app-react/static/media/Food.b823c17a3aad04192972.jpg",
+    "static/media/Jupyter.png": "/crypto-app-react/static/media/Jupyter.c68d65e9541cad43d9c0.png",
+    "static/media/Soundtrack.jpg": "/crypto-app-react/static/media/Soundtrack.5b27e557fe7fcbdfe380.jpg",
+    "static/media/MySQL.png": "/crypto-app-react/static/media/MySQL.a31204bbd19099c81c6e.png",
+    "static/media/HTML.png": "/crypto-app-react/static/media/HTML.d2101fe33f041f8e74bd.png",
+    "static/media/GoogleCollab.png": "/crypto-app-react/static/media/GoogleCollab.3aedf5a7ea0f28f433d3.png",
+    "static/media/C++.png": "/crypto-app-react/static/media/C++.6ceebb83cf740194f4f8.png",
+    "static/media/SwiftUI.png": "/crypto-app-react/static/media/SwiftUI.4fc43a93292516297913.png",
+    "static/media/Tensorflow.png": "/crypto-app-react/static/media/Tensorflow.9ef4b60d0a0fb360e22d.png",
+    "static/media/JS.png": "/crypto-app-react/static/media/JS.aa2e5317530cc7559aea.png",
+    "index.html": "/crypto-app-react/index.html",
+    "main.d5289b2f.css.map": "/crypto-app-react/static/css/main.d5289b2f.css.map",
+    "main.48c3d6ce.js.map": "/crypto-app-react/static/js/main.48c3d6ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5289b2f.css",
+    "static/js/main.48c3d6ce.js"
+  ]
+}

@@ -1,0 +1,126 @@
+#skill-container
+{
+    height: 1700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skill-container > div
+{
+    width: 60%;
+}
+
+#skill-header
+{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px !important;
+}
+
+.skill-block
+{
+    width: 100%;
+}
+
+.skill-block-header-left, .skill-block-header-right
+{
+    font-size: 28px;
+    margin-top: 20px !important;
+}
+
+.skill-block-header-left
+{
+    text-align: left;
+}
+
+.skill-block-header-right
+{
+    text-align: right;
+}
+
+.skill-block-list-left, .skill-block-list-right
+{
+    display: flex;
+    margin: 20px 0;
+}
+
+.skill-block-list-left
+{
+    justify-content: start;
+}
+
+.skill-block-list-right
+{
+    justify-content: end;
+}
+
+.skill-item
+{
+    margin: 10px;
+    text-align: center;
+}
+
+.skill-item-img
+{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill-item-content
+{
+    font-size: 20px;
+}
+
+/* Media query for screens smaller than 900px */
+@media (max-width: 1100px) {
+
+    #skill-container
+    {
+        height: 1800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill-block-header-left, .skill-block-header-right
+    {
+        text-align: center;
+    }
+
+    .skill-block-list-left, .skill-block-list-right
+    {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #skill-container
+    {
+        height: 1700px;
+    }
+}
+
+@media (max-width: 500px) 
+{
+    #skill-container
+    {
+        height: 3100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skill-header
+    {
+        font-size: 32px;
+    }
+
+    .skill-block-list-left, .skill-block-list-right
+    {
+        flex-direction: column;
+    }
+}

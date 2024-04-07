@@ -1,0 +1,144 @@
+#about-container
+{
+    height: 1100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-container-center
+{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#about-information
+{
+    margin-bottom: 50px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-info-header
+{
+    margin-bottom: 20px !important;
+    font-size: 40px;
+    text-align: center;
+}
+
+#about-info-content
+{
+    font-size: 32px;
+    width: 75%;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
+}
+
+#about-hobby
+{
+    width: 75%;
+    text-align: start;
+}
+
+#about-hobby-title
+{
+    margin-bottom: 20px !important;
+    font-size: 40px;
+    text-align: start;
+}
+
+#about-hobby-list
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.hobby-item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+}
+
+.hobby-item-header
+{
+    font-size: 32px;
+    text-align: center;
+}
+
+.hobby-item-image
+{
+    width: 300px;
+    height: 300px; 
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.hobby-item-info
+{
+    font-size: 22px;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
+}
+
+@media (max-width: 1100px) {
+
+    #about-container
+    {
+        height: 2100px;
+    }
+
+    #about-hobby-list
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-info-content
+    {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #about-container
+    {
+        height: 2200px;
+    }
+}
+
+@media (max-width: 500px) 
+{
+    #about-container
+    {
+        height: 2500px;
+    }
+
+    #about-title
+    {
+        font-size: 32px;
+    }
+
+    #about-content
+    {
+        font-size: 22px;
+        text-align: start;
+    }
+}
