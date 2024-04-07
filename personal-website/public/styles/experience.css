@@ -1,6 +1,6 @@
 #experience-container
 {
-    height: 800px;
+    height: 700px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -60,7 +60,7 @@
 
     #experience-container
     {
-        height: 950px;
+        height: 800px;
     }
 
     .experience-item
@@ -77,6 +77,11 @@
 
 @media (max-width: 800px) {
 
+    #experience-container
+    {
+        height: 700px;
+    }
+
     .experience-item-header
     {
         font-size: 24px;
@@ -92,7 +97,7 @@
 {
     #experience-container
     {
-        height: 1100px;
+        height: 800px;
     }
 
     .experience-item-header

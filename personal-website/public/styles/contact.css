@@ -43,10 +43,18 @@
      box-shadow: none!important;
 }
 
+@media (max-width: 800px) {
+
+    #contact-container
+    {
+        height: 600px;
+    }
+}
+
 @media (max-width: 500px) 
 {
     #contact-container
     {
-        align-items: start;
+        height: 600px;
     }
 }
