@@ -5,6 +5,7 @@
     justify-content: center;
     padding: 50px;
     height: 600px;
+    border: 1px solid black;
 }
 
 #profile-pic img
@@ -102,5 +103,42 @@
         font-size: 20px;
         line-height: 1.5;
         text-align: center;
+    }
+}
+
+@media (max-width: 420px) 
+{
+    #home-container
+    {
+        height: 800px;
+    }
+
+    #profile-pic img
+    {
+        width: 350px;
+        height: 350px;
+    }
+
+    #profile-text-header
+    {
+        font-size: 32px;
+    }
+
+    #profile-text-subheader
+    {
+        font-size: 28px;
+        margin-bottom: 10px !important;
+    }
+
+    .profile-text-content
+    {
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    #profile-text-button
+    {
+        font-size: 18px;
     }
 }

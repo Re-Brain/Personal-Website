@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid black;
 }
 
 #contact-container > div
@@ -56,5 +57,10 @@
     #contact-container
     {
         height: 600px;
+    }
+
+    #contact-header
+    {
+        font-size: 32px;
     }
 }

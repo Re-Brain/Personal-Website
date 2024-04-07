@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 
 #about-container-center
@@ -114,6 +115,7 @@
     {
         font-size: 24px;
     }
+
 }
 
 @media (max-width: 800px) {
@@ -128,17 +130,67 @@
 {
     #about-container
     {
-        height: 2500px;
+        height: 2300px;
     }
 
-    #about-title
+    #about-info-header
     {
         font-size: 32px;
     }
 
-    #about-content
+    #about-info-content
     {
         font-size: 22px;
         text-align: start;
+    }
+
+    #about-hobby-title
+    {
+        font-size: 32px;
+    }
+
+    .hobby-item-header
+    {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hobby-item-info
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 420px) 
+{
+    #about-container
+    {
+        height: 2100px;
+    }
+
+    #about-info-header
+    {
+        font-size: 28px;
+    }
+
+    #about-info-content
+    {
+        font-size: 20px;
+    }
+
+    .hobby-item-image
+    {
+        width: 200px;
+        height: 200px; 
+    }
+
+    .hobby-item-header
+    {
+        font-size: 28px;
+    }
+
+    .hobby-item-info
+    {
+        font-size: 18px;
     }
 }
