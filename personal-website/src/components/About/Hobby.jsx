@@ -11,6 +11,7 @@ function Hobby(props)
                 props.items.map((item, index) => 
                 {
                     return <Hobbyitem
+                        key = {index}
                         header={item["header"]}
                         content={item["content"]}
                         img={item["img"]}

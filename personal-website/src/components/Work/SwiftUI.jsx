@@ -18,7 +18,7 @@ function SwiftUI()
                 <p className="project-tech">Framework : SwiftUI</p>
                 <p className="project-tech">
                     <a href="https://github.com/Re-Brain/E-Commerce-SwiftUI" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i>
+                        <i className="fa-brands fa-github"></i>
                     </a>
                 </p>
             </div>

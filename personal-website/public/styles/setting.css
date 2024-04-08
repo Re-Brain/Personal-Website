@@ -1,14 +1,16 @@
 /* Setting */
 
+/* @font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('../src/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+} */
+
 html
 {
     scroll-behavior: smooth;
     scroll-padding: var(--scroll-padding, 70px);
-}
-
-@font-face {
-    font-family: 'PlayfairDisplay-Regular';
-    src: url('../src/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
 }
 
 body

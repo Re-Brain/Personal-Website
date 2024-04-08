@@ -12,9 +12,9 @@ function Nav()
                 <li><a href="#work">Work</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                <label htmlFor="check" className="close-menu"><i className="fas fa-times"></i></label>
             </ul>
-            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            <label htmlFor="check" className="open-menu"><i className="fas fa-bars"></i></label>
         </nav>
     )
 }

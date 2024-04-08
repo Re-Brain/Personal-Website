@@ -8,10 +8,10 @@ function CS50Project(props)
            <p className="CS50Project-content">{props.content}</p>
            <div className="CS50Project-link-container">
                 <a className="CS50Project-link" href={props.github} target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-github"></i>
+                    <i className="fa-brands fa-github"></i>
                 </a>
                 <a className="CS50Project-link" href={props.video} target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-video"></i>
+                    <i className="fa-solid fa-video"></i>
                 </a>
            </div>
            

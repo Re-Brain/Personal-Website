@@ -117,19 +117,19 @@ function Contact(props)
                             <div className="load-dot"></div>
                         </div>
                     )}
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="Name" placeholder="Name" value={formData.Name} onChange={handleChange}/>
+                    <div className="form-group">
+                        <input type="text" className="form-control" name="Name" placeholder="Name" value={formData.Name} onChange={handleChange}/>
                     </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" name="Email" placeholder="Email" value={formData.Email} onChange={handleChange}/>
+                    <div className="form-group">
+                        <input type="email" className="form-control" name="Email" placeholder="Email" value={formData.Email} onChange={handleChange}/>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="Subject" placeholder="Subject" value={formData.Subject} onChange={handleChange}/>
+                    <div className="form-group">
+                        <input type="text" className="form-control" name="Subject" placeholder="Subject" value={formData.Subject} onChange={handleChange}/>
                     </div>
-                    <div class="form-group">
-                        <textarea class="form-control" name="Content" rows="10"placeholder="Content" value={formData.Content} onChange={handleChange}></textarea>
+                    <div className="form-group">
+                        <textarea className="form-control" name="Content" rows="10"placeholder="Content" value={formData.Content} onChange={handleChange}></textarea>
                     </div>
-                    <button type="submit" class="btn btn-dark">Submit</button>
+                    <button type="submit" className="btn btn-dark">Submit</button>
                 </form>
             </div>
         </div>

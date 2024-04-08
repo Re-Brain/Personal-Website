@@ -12,7 +12,7 @@ function Expitem(props)
                 {
                     props.content.map((item, index) => 
                     {
-                        return <li><p className="experience-item-content">{item}</p></li>
+                        return <li key={index}><p className="experience-item-content">{item}</p></li>
                     })
                 }
                 </ul>

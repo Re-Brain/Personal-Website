@@ -17,10 +17,10 @@ function Plantdatabase()
                 <p className="project-tech">Database: MySQL</p>
                 <p className="project-tech">
                     <a href="https://github.com/Re-Brain/PlantDatabase" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i>
+                        <i className="fa-brands fa-github"></i>
                     </a>
                     <a href="https://www.youtube.com/watch?v=vVvWTs1bCO0" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-solid fa-video"></i>
+                        <i className="fa-solid fa-video"></i>
                     </a>
                 </p>
            </div>
