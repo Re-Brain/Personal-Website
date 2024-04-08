@@ -1,12 +1,5 @@
 /* Setting */
 
-/* @font-face {
-    font-family: 'PlayfairDisplay-Regular';
-    src: url('../src/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 400;
-} */
-
 html
 {
     scroll-behavior: smooth;
@@ -15,7 +8,7 @@ html
 
 body
 {
-    font-family: 'PlayfairDisplay-Regular' !important;
+    font-family: 'Times New Roman', Times, serif !important;
     background-image: url('../images/Background.png');
     overflow: auto !important;
 }
