@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 
 #work-header
@@ -282,7 +283,7 @@ video
 
     .CS50Project-link
     {
-        font-size: 18px;
+        font-size: 25px;
     }
 }
 
@@ -304,5 +305,19 @@ video
     {
         width: 300px;
         height: 200px;
+    }
+
+    .CS50Project-container
+    {
+        width: 300px;
+        height: 200px;
+    }
+
+    .CS50Project-content
+    {
+        font-size: 18px;
+        width: 280px;
+        height: 80px;
+        margin-top: 10px !important;
     }
 }

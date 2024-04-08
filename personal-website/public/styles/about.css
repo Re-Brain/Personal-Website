@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 
 #about-container-center
@@ -175,6 +176,10 @@
     #about-info-content
     {
         font-size: 20px;
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        word-spacing: -0.05em;
     }
 
     .hobby-item-image

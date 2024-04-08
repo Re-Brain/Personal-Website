@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 
 #experience-container div
@@ -122,5 +123,11 @@
     #experience-container
     {
         height: 900px;
+    }
+
+    .experience-item-content
+    {
+        font-size: 18px;
+        text-align: start;
     }
 }

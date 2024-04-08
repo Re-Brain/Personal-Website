@@ -37,6 +37,14 @@
 {
     #footer-list
     {
-        width: 35%;
+        width: 45%;
+    }
+}
+
+@media (max-width: 380px) 
+{
+    #footer-list
+    {
+        width: 40%;
     }
 }

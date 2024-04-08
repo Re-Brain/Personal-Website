@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 
 #skill-container > div
@@ -108,7 +109,7 @@
 {
     #skill-container
     {
-        height: 3100px;
+        height: 2700px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -122,5 +123,11 @@
     .skill-block-list-left, .skill-block-list-right
     {
         flex-direction: column;
+    }
+
+    .skill-item-img
+    {
+        width: 75px;
+        height: 75px;
     }
 }
