@@ -25,7 +25,7 @@ function Plantdatabase()
                 </p>
            </div>
            <div className="project-right-display">
-                <img className="project-img"src={img} alt="One of the data inside the database"/>
+                <img className="project-img"src={img} alt="One of the data inside the database" loading="lazy"/>
            </div>
           
         </div>

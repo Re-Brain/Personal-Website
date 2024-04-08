@@ -7,13 +7,13 @@ html
 }
 
 @font-face {
-    font-family: 'HinaMincho-Regular';
-    src: url('../src/fonts/HinaMincho-Regular.ttf') format('truetype');
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('../src/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
 }
 
 body
 {
-    font-family: 'HinaMincho-Regular' !important;
+    font-family: 'PlayfairDisplay-Regular' !important;
     background-image: url('../images/Background.png');
     overflow: auto !important;
 }

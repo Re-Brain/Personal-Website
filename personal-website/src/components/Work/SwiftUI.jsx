@@ -23,7 +23,7 @@ function SwiftUI()
                 </p>
             </div>
             <div className="project-right-display">
-                <img className="project-img"src={img} alt="Display All item page in the application"/>
+                <img className="project-img"src={img} alt="Display All item page in the application" loading="lazy"/>
            </div>
      </div>
     )
