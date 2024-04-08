@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../images/PlantDBS.png"
+// import img from "../../images/PlantDBS.png"
 
 function SwiftUI()
 {
@@ -23,7 +23,7 @@ function SwiftUI()
                 </p>
             </div>
             <div className="project-right-display">
-                <img className="project-img"src={img} alt="Display All item page in the application" loading="lazy"/>
+                {/* <img className="project-img"src={img} alt="Display All item page in the application" loading="lazy"/> */}
            </div>
      </div>
     )
