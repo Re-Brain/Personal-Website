@@ -6,12 +6,16 @@ function Info()
         <div id="about-information">
             <p id="about-info-header">About Me</p>
             <p id="about-info-content">
-                As a driven and eager third-year student at National Dong Hwa University majoring in computer science and information engineering,
-                I'm actively looking for an internship that would expose me to real-world difficulties. My objective is to learn from expertist. 
-                Along with having hands-on expertise with both front-end and back-end web development technologies, 
-                I have a strong understanding of core programming concepts, data structures, and algorithms. 
-                In addition, I am proficient with Python frameworks and have some expertise with mobile programming. 
-                I also have knowledge of machine learning.
+            I am a senior-year student at National Dong Hwa University, specializing in 
+            Computer Science and Information Engineering, with extensive experience in 
+            front-end and back-end website development, mobile application development
+            , and machine learning. Additionally, I have cultivated cultural intelligence 
+            from working with people from diverse backgrounds during my internship experiences 
+            in Thailand and Taiwan. I am actively seeking an internship in front-end, back-end, 
+            or full-stack web development positions to gain hands-on experience and learn from 
+            a professional team while contributing to project completion. After my graduation 
+            for 2-3 years, I hope to be working in the industry in either front-end or back-end 
+            position in website development.
             </p>
         </div>
     )

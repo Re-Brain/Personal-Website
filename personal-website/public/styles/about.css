@@ -1,6 +1,6 @@
 #about-container
 {
-    height: 1100px;
+    height: 1200px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@
 
 #about-hobby
 {
-    width: 75%;
+    width: 85%;
     text-align: start;
 }
 
@@ -97,6 +97,27 @@
     word-spacing: -0.05em;
 }
 
+@media (max-width: 1300px) {
+
+    #about-container
+    {
+        height: 2200px;
+    }
+
+    #about-hobby-list
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hobby-item
+    {
+        width: 50%;
+    }
+}
+
 @media (max-width: 1100px) {
 
     #about-container
@@ -121,7 +142,9 @@
 
     #about-container
     {
-        height: 2200px;
+        height: 2450px;
+        /* background-color: gray; */
+
     }
 }
 
@@ -160,40 +183,57 @@
     }
 }
 
-@media (max-width: 430px) 
+@media (max-width: 500px) 
 {
     #about-container
     {
-        height: 2100px;
+        height: 2000px;
+        /* background-color: gray; */
     }
 
     #about-info-header
     {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     #about-info-content
     {
-        font-size: 20px;
+        font-size: 18px;
         text-align: justify;
         hyphens: auto;
         -webkit-hyphens: auto;
         word-spacing: -0.05em;
     }
 
+    .hobby-item
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        background: black;
+        color: white;
+        width: 85%;
+    }
+
     .hobby-item-image
     {
-        width: 200px;
-        height: 200px; 
+        width: 250px;
+        height: 230px; 
     }
 
     .hobby-item-header
     {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .hobby-item-info
     {
         font-size: 18px;
     }
+
+
 }
