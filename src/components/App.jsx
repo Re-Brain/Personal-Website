@@ -15,7 +15,9 @@ function App() {
     <div>
       <Nav />
       <div className="page-container">
-        <section id="home">{/* <Home /> */}</section>
+        <section id="home">
+          <Home />
+        </section>
         <section id="about">
           <About />
         </section>
