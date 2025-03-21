@@ -70,13 +70,13 @@
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        width: 80%;
+        width: 70%;
         height: 100vh;
         position: fixed;
         top: 0;
         right: -100%;
         z-index: 100;
-        background-color: black;
+        background-color: #CC0000;
         transition: all 0.2s ease-in-out;
     }
 

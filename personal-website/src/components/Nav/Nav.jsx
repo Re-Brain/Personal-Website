@@ -10,7 +10,7 @@ function Nav()
             <input type='checkbox' id='check' />
             <ul id="navbar" >
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/work">Projects</Link></li>
+                <li><Link to="/project">Projects</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
                 <label htmlFor="check" className="close-menu"><i className="fas fa-times"></i></label>
             </ul>
