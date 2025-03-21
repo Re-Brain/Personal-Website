@@ -1,0 +1,285 @@
+#project-container
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+#project-header
+{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px !important;
+}
+
+.project-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.project-display
+{
+    margin-bottom: 30px;
+}
+
+.project-img, .project-img-aora
+{
+    width: 750px;
+    height: 450px;
+    border-radius: 10px;
+    border: 5px solid black;
+    object-fit: cover;
+}
+
+.project-img-mobile
+{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid black;
+    object-fit: cover;
+}
+
+.project-img-aora
+{
+    width: 320px;
+    height: 600px;
+    object-fit: fill;
+}
+
+.project-detail
+{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.project-header
+{
+    font-size: 30px;
+}
+
+.project-content
+{
+    font-size: 24px;
+    width: 100%;
+    margin-top: 10px !important;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
+}
+
+.project-tech
+{
+    font-size: 20px;
+    margin-top: 10px !important;
+}
+
+.project-tech > a > i
+{
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+}
+
+video
+{
+    object-fit: cover !important;
+    border-radius: 10px !important;
+    width: 750px;
+    height: 450px;
+    border: 5px solid black;
+}
+
+#CS50-container
+{
+    width: 75%;
+    margin: 0 auto;
+}
+
+#CS50-header
+{
+    font-size: 32px;
+    text-align: center;
+}
+
+#CS50-upper-items
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px !important;
+}
+
+#CS50-lower-items
+{
+    display: flex;
+    justify-content:center;
+    margin-top: 30px !important;
+}
+
+.CS50Project-container
+{
+    background-color: black;
+    color: white;
+    width: 350px;
+    height: 220px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.CS50Project-header
+{
+    font-size: 24px;
+}
+
+.CS50Project-content
+{
+    font-size: 18px;
+    width: 300px;
+    height: 80px;
+    margin-top: 10px !important;
+}
+
+.CS50Project-link-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.CS50Project-link
+{
+    font-size: 25px;
+    text-decoration: none;
+    /* padding: 10px; */
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Media Queries */
+/* Large devices (laptops/desktops, 1200px and down) */
+@media (max-width: 1200px) {
+
+    .project-img, .project-img-aora {
+        width: clamp(300px, 80vw, 550px);
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    video {
+        width: clamp(300px, 80vw, 550px);
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    .project-img-aora {
+        width: clamp(200px, 40vw, 260px);
+        aspect-ratio: 9/16;
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+    #project-container {
+        padding: 3rem 0;
+    }
+
+    #project-header {
+        font-size: 1.75rem;
+    }
+
+    .project-header {
+        font-size: 1.25rem;
+    }
+
+    .project-content {
+        font-size: 1rem;
+    }
+
+    .project-tech {
+        font-size: 0.875rem;
+    }
+
+    #CS50-container {
+        width: 90%;
+    }
+
+    #CS50-header {
+        font-size: 1.5rem;
+    }
+
+    #CS50-upper-items,
+    #CS50-lower-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 1.5rem !important;
+    }
+
+    .CS50Project-container {
+        width: clamp(280px, 90%, 350px);
+        height: auto;
+        min-height: 220px;
+        margin: 1rem 0;
+    }
+}
+
+/* Small devices (mobile phones, 480px and down) */
+@media (max-width: 480px) {
+    #project-container {
+        padding: 2rem 0;
+    }
+
+    .project-detail {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .project-img, video {
+        width: clamp(250px, 90vw, 350px);
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    .project-img-aora {
+        width: clamp(180px, 50vw, 200px);
+        aspect-ratio: 9/16;
+    }
+
+    #CS50-header {
+        font-size: 1.25rem;
+    }
+
+    .CS50Project-container {
+        width: clamp(250px, 90%, 300px);
+        padding: 1rem;
+    }
+
+    #CS50-upper-items,
+    #CS50-lower-items {
+        gap: 1rem;
+        margin-top: 1rem !important;
+    }
+
+    .CS50Project-content {
+        width: 100%;
+        height: auto;
+        min-height: 80px;
+    }
+
+    .project-tech > a > i {
+        font-size: 1.25rem;
+    }
+}

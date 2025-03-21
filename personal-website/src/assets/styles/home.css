@@ -1,0 +1,124 @@
+#home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 0;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+#profile-pic img {
+  width: 31.25rem; /* 500px */
+  height: 31.25rem; /* 500px */
+  object-fit: cover;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 0.625rem solid black; /* 10px */
+}
+
+#profile-text-container {
+  margin: 2.188rem; /* 35px */
+}
+
+#profile-text-header {
+  font-size: 6.125rem; /* 98px */
+}
+
+#profile-text-subheader {
+  font-size: 3rem; /* 48px */
+}
+
+.profile-text-content {
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.5;
+}
+
+#profile-text-button {
+  margin-top: 0.938rem; /* 15px */
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  border-radius: 0.625rem; /* 10px */
+  border: none;
+  font-size: 1.25rem; /* 20px */
+  background-color: black;
+}
+
+/* Desktop and large tablets (1100px and down) */
+@media (max-width: 1100px) {
+  #home-container {
+    /* Remove fixed height */
+    width: 100%;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #profile-text-header {
+    font-size: 5rem; /* 80px */
+  }
+
+  #profile-text-container {
+    text-align: center;
+  }
+}
+
+/* Tablets and large phones (800px and down) */
+@media (max-width: 800px) {
+    #home-container {
+        /* Remove fixed height */
+        width: 100%;
+    }
+
+  #profile-pic img {
+    width: 25rem; /* 400px */
+    height: 25rem; /* 400px */
+  }
+
+  #profile-text-header {
+    font-size: 4rem; /* 64px */
+  }
+
+  #profile-text-subheader {
+    font-size: 2.5rem; /* 40px */
+  }
+
+  .profile-text-content {
+    font-size: 1.25rem; /* 20px */
+    text-align: center;
+  }
+}
+
+/* Mobile phones (480px and down) */
+@media (max-width: 480px) {
+  #profile-pic img {
+    width: 18.75rem; /* 300px */
+    height: 18.75rem; /* 300px */
+  }
+
+  #profile-text-header {
+    font-size: 2rem; /* 32px */
+  }
+
+  #profile-text-subheader {
+    font-size: 1.75rem; /* 28px */
+    margin-bottom: 0.625rem !important; /* 10px */
+  }
+
+  .profile-text-content {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  #profile-text-button {
+    font-size: 1.125rem; /* 18px */
+  }
+}
