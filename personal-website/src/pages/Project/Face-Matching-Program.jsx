@@ -6,7 +6,7 @@ function Plantdatabase()
     return (
         <div className="project-container">
             <div className="project-display">
-                <img className="project-img-mobile" src={img} alt="The main page of the air guitar mobile game" loading="lazy"/>
+                <img className="project-img" src={img} alt="The main page of the air guitar mobile game" loading="lazy"/>
            </div>
            
            <div className="project-detail">

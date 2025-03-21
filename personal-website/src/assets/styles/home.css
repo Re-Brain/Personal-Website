@@ -22,7 +22,7 @@
   object-fit: cover;
   border-radius: 50%;
   box-sizing: border-box;
-  border: 0.625rem solid black; /* 10px */
+  border: 0.625rem solid #cc0000; /* 10px */
 }
 
 #profile-text-container {
@@ -31,15 +31,22 @@
 
 #profile-text-header {
   font-size: 6.125rem; /* 98px */
+  white-space: nowrap;
+  overflow: hidden;
+  color: #ff1e1e;
 }
 
 #profile-text-subheader {
   font-size: 3rem; /* 48px */
+  white-space: nowrap;
+  color: #FF4D4D;
+  margin-bottom: 1rem !important;
 }
 
 .profile-text-content {
   font-size: 1.5rem; /* 24px */
   line-height: 1.5;
+  white-space: nowrap;
 }
 
 #profile-text-button {
@@ -48,7 +55,12 @@
   border-radius: 0.625rem; /* 10px */
   border: none;
   font-size: 1.25rem; /* 20px */
-  background-color: black;
+  background-color: #CC0000;
+}
+
+#profile-text-button:hover {
+  background-color: #FF1E1E;
+ 
 }
 
 /* Desktop and large tablets (1100px and down) */
@@ -65,6 +77,7 @@
 
   #profile-text-header {
     font-size: 5rem; /* 80px */
+    white-space: nowrap;
   }
 
   #profile-text-container {
@@ -74,10 +87,10 @@
 
 /* Tablets and large phones (800px and down) */
 @media (max-width: 800px) {
-    #home-container {
-        /* Remove fixed height */
-        width: 100%;
-    }
+  #home-container {
+    /* Remove fixed height */
+    width: 100%;
+  }
 
   #profile-pic img {
     width: 25rem; /* 400px */
@@ -86,10 +99,15 @@
 
   #profile-text-header {
     font-size: 4rem; /* 64px */
+    white-space: nowrap;
   }
 
   #profile-text-subheader {
     font-size: 2.5rem; /* 40px */
+  }
+
+  .profile-text-content {
+    white-space: wrap;
   }
 
   .profile-text-content {
@@ -107,6 +125,7 @@
 
   #profile-text-header {
     font-size: 2rem; /* 32px */
+    white-space: nowrap;
   }
 
   #profile-text-subheader {

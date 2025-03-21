@@ -1,15 +1,10 @@
 /* Setting */
 
-html
-{
-    scroll-behavior: smooth;
-    scroll-padding: var(--scroll-padding, 70px);
-}
-
 body
 {
-    font-family: 'Times New Roman', Times, serif !important;
-    background-image: url('../images/Background.png');
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+    background-color: #1A1A1A;
+    color: #FFFFFF; 
     overflow: auto !important;
 }
 
