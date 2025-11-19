@@ -15,19 +15,21 @@
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1.875rem !important;
-  color: #ff1e1e;
+  color: var(--accent-color);
   font-weight: bold;
 }
 
 #contact-form > button {
   margin: 0 0.3125rem;
   width: 100%;
-  background-color: #cc0000;
+  background-color: var(--accent-color);
   color: #fff;
+  transition: all 0.3s ease;
 }
 
 #contact-form > button:hover {
-  background-color: #FF1E1E; /* Lighter red on hover */
+  opacity: 0.9;
+  transform: scale(1.02);
 }
 
 .form-group {
@@ -38,8 +40,17 @@
   resize: none;
 }
 
+.form-control {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+  transition: all 0.3s ease;
+}
+
 .form-control:focus {
-  border-color: rgba(100, 100, 100, 1) !important;
+  border-color: var(--accent-color) !important;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;

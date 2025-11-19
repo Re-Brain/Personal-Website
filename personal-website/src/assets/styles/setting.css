@@ -1,11 +1,56 @@
 /* Setting */
 
+:root {
+    /* Dark theme (default) */
+    --bg-primary: #1A1A1A;
+    --bg-secondary: #2A2A2A;
+    --text-primary: #FFFFFF;
+    --text-secondary: #CCCCCC;
+    --text-dark: #FFFFFF;
+    --text-gray: #AAAAAA;
+    --accent-color: #CC0000;
+    --button-bg: #CC0000;
+    --toggle-bg: #CC0000;
+    --profile-border: #CC0000;
+    --nav-bg: #CC0000;
+    --nav-text: #FFFFFF;
+    --card-bg: #252525;
+    --border-color: #404040;
+}
+
+[data-theme="light"] {
+    /* Light theme */
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F5F5F5;
+    --text-primary: #1A1A1A;
+    --text-secondary: #333333;
+    --text-dark: #1A1A1A;
+    --text-gray: #666666;
+    --accent-color: #CC0000;
+    --button-bg: #1A1A1A;
+    --toggle-bg: #1A1A1A;
+    --profile-border: #1A1A1A;
+    --nav-bg: #2A2A2A;
+    --nav-text: #FFFFFF;
+    --card-bg: #FAFAFA;
+    --border-color: #E0E0E0;
+}
+
 body
 {
-    font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
-    background-color: #1A1A1A;
-    color: #FFFFFF; 
+    font-family: 'Lora', Georgia, serif !important;
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important; 
     overflow: auto !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Elegant headings with Playfair Display */
+h1, h2, h3, h4, h5, h6,
+.heading,
+.title {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-weight: 700;
 }
 
 p

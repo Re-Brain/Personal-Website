@@ -1,0 +1,52 @@
+.education-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem auto;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.education-header-line {
+    flex: 1;
+    height: 2px;
+    background-color: #888888;
+    transition: background-color 0.3s ease;
+}
+
+.education-header-title {
+    font-size: 3rem;
+    font-weight: 700;
+    white-space: nowrap;
+    margin: 0 !important;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark theme (default) */
+:root .education-header-title {
+    color: #CC0000;
+}
+
+/* Light theme */
+[data-theme="light"] .education-header-title {
+    color: #1A1A1A;
+}
+
+@media (max-width: 768px) {
+    .education-header-title {
+        font-size: 2rem;
+    }
+    
+    .education-header-container {
+        gap: 1rem;
+    }
+}
+
+.education-timeline {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+}

@@ -26,7 +26,7 @@
     margin-bottom: 1.25rem !important; /* 20px */
     font-size: 2.5rem; /* 40px */
     text-align: center;
-    color: #ff1e1e;
+    color: var(--accent-color);
     font-weight: bold;
 }
 
@@ -37,6 +37,7 @@
     hyphens: auto;
     -webkit-hyphens: auto;
     word-spacing: -0.05em;
+    color: var(--text-primary);
 }
 
 #about-hobby {
@@ -48,7 +49,7 @@
     margin-bottom: 1.25rem !important; /* 20px */
     font-size: 2.5rem; /* 40px */
     text-align: start;
-    color: #ff1e1e;
+    color: var(--accent-color);
     font-weight: bold;
 }
 
@@ -61,18 +62,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 0.063rem solid black; /* 1px */
+    border: 0.063rem solid var(--border-color); /* 1px */
     padding: 1.25rem; /* 20px */
     margin: 0.625rem; /* 10px */
     border-radius: 0.625rem; /* 10px */
-    background: black;
-    color: white;
+    background: var(--card-bg);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
 }
 
 .hobby-item-header {
     font-size: 2rem; /* 32px */
     text-align: center;
-    color: #FF4D4D;
+    color: var(--accent-color);
+    opacity: 0.8;
     white-space: nowrap;
 }
 

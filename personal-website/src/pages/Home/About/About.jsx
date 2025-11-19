@@ -1,62 +1,29 @@
 import React from "react";
-import Info from "./Info";
-import Hobby from "./Hobby";
-
-import Travel from "../../../assets/images/Travel.jpg";
-import Food from "../../../assets/images/Food.jpg";
-import Soundtrack from "../../../assets/images/Soundtrack.jpg";
-
+import './About.css';
 
 function About() {
-
-    const items = [
-        {
-            header: "Adventurer",
-            content: (
-                <p className="hobby-item-info">
-                    Being an adventurer means I like exploring new places.
-                    When I have free time or want to take a break from work,
-                    I usually look for a nearby location that I have never been to before to see what the area is like.
-                    This concept also applied to my vacation.
-                </p>
-            ),
-            img: Travel
-
-        },
-        {
-            header: "Food Scavenger",
-            content: (
-                <p className="hobby-item-info">
-                    Along with my adventurer hobby, I enjoy exploring new restaurants and cafes where I can enjoy the atmosphere and the food,
-                    and if I have the opportunity, I will return to some of the places I have visited with my friend.
-                </p>
-            ),
-            img: Food
-        }
-        ,
-        {
-            header: "Soundtrack Enthusiasm",
-            content: (
-                <p className="hobby-item-info">
-                    I enjoy watching movies, TV series, and anime.
-                    But I also enjoy searching up the soundtrack from a particular scene.
-                    If I like the soundtrack, I will search for it, save it, and listen to it on a regular basis.
-                </p>
-            ),
-            img: Soundtrack
-        }
-    ]
-
     return (
-        <div id="about-container">
-            <div id="about-container-center">
-                <Info />
-                <Hobby
-                    items={items}
-                />
+        <div className="about-container">
+            <div className="about-header-container">
+                <div className="about-header-line"></div>
+                <h1 className="about-header-title">About Me</h1>
+                <div className="about-header-line"></div>
+            </div>
+            
+            <div className="about-content">
+                <p className="about-text">
+                    Fresh graduate from National Dong Hwa University with a B.S. in Computer Science and Information Engineering. 
+                    Experienced in full-stack web development, mobile applications, and cross-platform projects spanning hardware, IoT, and game development.
+                </p>
+                <p className="about-text">
+                    I've worked across Thailand and Taiwan, developing strong cultural adaptability and collaboration skills with diverse teams.
+                </p>
+                <p className="about-text">
+                    Currently seeking a full-time position in web development or related fields where I can build innovative solutions and grow as a specialist in modern technologies.
+                </p>
             </div>
         </div>
-    )
+    );
 }
 
 export default About;

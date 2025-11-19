@@ -12,7 +12,7 @@
     text-align: center;
     font-size: 40px;
     margin-bottom: 10px !important;
-    color: #ff1e1e;
+    color: var(--accent-color);
     font-weight: bold;
 }
 
@@ -25,9 +25,43 @@
     margin: 50px;
 }
 
-.project-display
-{
-    margin-bottom: 30px;
+.project-display {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem; /* Add padding for buttons */
+    margin-bottom: 2rem;
+}
+
+
+.carousel-btn {
+    position: absolute;
+    background: var(--accent-color);
+    opacity: 0.8;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    z-index: 2;
+    border-radius: 25%;
+}
+
+.carousel-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.prev {
+    left: 0; /* Move outside the image */
+    transform: translateX(-50%);
+}
+
+.next {
+    right: 0; /* Move outside the image */
+    transform: translateX(50%);
 }
 
 .project-img, .project-img-aora
@@ -35,8 +69,9 @@
     width: 750px;
     height: 450px;
     border-radius: 10px;
-    border: 5px solid #FF1E1E;
+    border: 5px solid var(--accent-color);
     object-fit: cover;
+    transition: border-color 0.3s ease;
 }
 
 .project-img-mobile
@@ -44,8 +79,9 @@
     width: clamp(200px, 40vw, 260px);
     height: auto;
     border-radius: 10px;
-    border: 5px solid #FF1E1E;
+    border: 5px solid var(--accent-color);
     object-fit: cover;
+    transition: border-color 0.3s ease;
 }
 
 .project-img-aora
@@ -58,16 +94,18 @@
 .project-detail
 {
     padding: 20px;
-    background-color: black;
-    color: white;
+    background-color: var(--card-bg);
+    color: var(--text-primary);
     border-radius: 10px;
     width: 75%;
+    transition: all 0.3s ease;
 }
 
 .project-header
 {
     font-size: 30px;
-    color: #FF4D4D;
+    color: var(--accent-color);
+    opacity: 0.9;
 }
 
 .project-content
@@ -79,19 +117,22 @@
     hyphens: auto;
     -webkit-hyphens: auto;
     word-spacing: -0.05em;
+    color: var(--text-primary);
 }
 
 .project-tech
 {
     font-size: 20px;
     margin-top: 10px !important;
+    color: var(--text-primary);
 }
 
 .project-tech > a > i
 {
-    color: #FF1E1E;
+    color: var(--accent-color);
     font-size: 25px;
     margin: 5px;
+    transition: color 0.3s ease;
 }
 
 video
@@ -100,7 +141,8 @@ video
     border-radius: 10px !important;
     width: 750px;
     height: 450px;
-    border: 5px solid #FF1E1E;
+    border: 5px solid var(--accent-color);
+    transition: border-color 0.3s ease;
 }
 
 #CS50-container
@@ -113,7 +155,7 @@ video
 {
     font-size: 32px;
     text-align: center;
-    color: #FF1E1E;
+    color: var(--accent-color);
 }
 
 #CS50-upper-items
@@ -132,19 +174,20 @@ video
 
 .CS50Project-container
 {
-    background-color: black;
-    color: white;
+    background-color: var(--card-bg);
+    color: var(--text-primary);
     width: 350px;
     height: 220px;
     padding: 20px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 .CS50Project-header
 {
-    color: #FF1E1E;
+    color: var(--accent-color);
     font-size: 24px;
 }
 
@@ -154,6 +197,7 @@ video
     width: 300px;
     height: 80px;
     margin-top: 10px !important;
+    color: var(--text-primary);
 }
 
 .CS50Project-link-container
@@ -170,7 +214,8 @@ video
     /* padding: 10px; */
     margin: 5px;
     border-radius: 10px;
-    color: #FF1E1E;
+    color: var(--accent-color);
+    transition: color 0.3s ease;
 }
 
 /* Media Queries */
@@ -207,6 +252,15 @@ video
 
     .project-header {
         font-size: 1.25rem;
+    }
+
+    .project-display {
+        padding: 0 3rem; /* Reduce padding on smaller screens */
+    }
+
+    .carousel-btn {
+        padding: 0.75rem;
+        font-size: 1rem;
     }
 
     .project-content {
@@ -269,6 +323,10 @@ video
     .project-img-aora {
         width: clamp(180px, 50vw, 200px);
         aspect-ratio: 9/16;
+    }
+
+    .project-display {
+        padding: 0 1.3rem; /* Further reduce padding on mobile */
     }
 
     #CS50-header {

@@ -22,7 +22,8 @@
   object-fit: cover;
   border-radius: 50%;
   box-sizing: border-box;
-  border: 0.625rem solid #cc0000; /* 10px */
+  border: 0.625rem solid var(--profile-border); /* 10px */
+  transition: border-color 0.3s ease;
 }
 
 #profile-text-container {
@@ -33,20 +34,39 @@
   font-size: 6.125rem; /* 98px */
   white-space: nowrap;
   overflow: hidden;
-  color: #ff1e1e;
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
 }
 
 #profile-text-subheader {
   font-size: 3rem; /* 48px */
   white-space: nowrap;
-  color: #FF4D4D;
+  color: var(--text-gray);
   margin-bottom: 1rem !important;
+  transition: color 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+}
+
+.profile-text-tagline {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 0 !important;
+  max-width: 600px;
+  transition: color 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.2);
 }
 
 .profile-text-content {
   font-size: 1.5rem; /* 24px */
   line-height: 1.5;
   white-space: nowrap;
+  color: var(--text-dark);
+  transition: color 0.3s ease;
 }
 
 #profile-text-button {
@@ -55,12 +75,14 @@
   border-radius: 0.625rem; /* 10px */
   border: none;
   font-size: 1.25rem; /* 20px */
-  background-color: #CC0000;
+  background-color: var(--button-bg);
+  color: white;
+  transition: all 0.3s ease;
 }
 
 #profile-text-button:hover {
-  background-color: #FF1E1E;
- 
+  opacity: 0.9;
+  transform: scale(1.05);
 }
 
 /* Desktop and large tablets (1100px and down) */
@@ -140,4 +162,28 @@
   #profile-text-button {
     font-size: 1.125rem; /* 18px */
   }
+}
+
+.education-section {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.education-degree {
+  font-size: 1.5rem; /* 24px */
+  color: var(--text-dark);
+  margin-bottom: 0.5rem !important;
+  transition: color 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.education-university {
+  font-size: 1.5rem; /* 24px */
+  color: var(--text-dark);
+  margin-bottom: 0 !important;
+  transition: color 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.2);
 }

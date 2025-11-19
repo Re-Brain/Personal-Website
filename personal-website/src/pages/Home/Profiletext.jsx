@@ -13,6 +13,7 @@ function Profiletext()
         <div id="profile-text-container">
             <p id="profile-text-header">Hello, I'm Brain</p>
             <p id="profile-text-subheader">Software Engineer</p>
+            <p className="profile-text-tagline">Full-stack developer with experience in web, mobile, hardware, game development, and AI</p>
             <p className="profile-text-content">Bachelor Degree in Computer Science and Information Engineering</p>
             <p className="profile-text-content">National Dong Hwa University</p>
              <button 

@@ -1,10 +1,11 @@
 #footer-container
 {
     padding: 20px;
-    background-color: #CC0000;
+    background-color: var(--nav-bg);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.3s ease;
 }
 
 #footer-list
@@ -22,11 +23,13 @@
 
 #footer-item > a > i
 {
-    color: white;
+    color: var(--nav-text);
+    transition: color 0.3s ease;
 }
 
 #footer-item > a > i:hover {
-    color: #000000;
+    color: var(--text-primary);
+    opacity: 0.8;
 }
 
 @media (max-width: 1300px) {

@@ -7,6 +7,7 @@ import Project from './pages/Project/Project';
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/styles/setting.css";
@@ -15,6 +16,7 @@ function App() {
     return (
         <Router>
             <ScrollToTop />
+            <ThemeToggle />
             <div>
                 <Nav />
                 <div className="page-container">
