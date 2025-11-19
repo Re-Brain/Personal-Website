@@ -111,12 +111,6 @@
     text-align: center;
 }
 
-.languages-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
 @media (max-width: 768px) {
     .github-container {
         padding: 40px 15px;
@@ -133,10 +127,6 @@
     .github-simple-stats {
         grid-template-columns: 1fr;
         gap: 20px;
-    }
-
-    .languages-grid {
-        grid-template-columns: 1fr;
     }
 
     .github-button {

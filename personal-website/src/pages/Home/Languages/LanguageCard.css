@@ -1,0 +1,177 @@
+.language-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.language-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 6px 20px rgba(204,0,0,0.2);
+}
+
+.language-card-header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.language-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 8px 0;
+}
+
+.language-proficiency {
+    font-family: 'Lora', serif;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.language-test-info {
+    margin-bottom: 20px;
+}
+
+.test-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 12px;
+}
+
+.total-score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.score-label {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.score-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.cefr-level {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.cefr-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, var(--accent-color), #FF0000);
+    color: #FFFFFF;
+    border-radius: 20px;
+    font-family: 'Lora', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 10px rgba(204,0,0,0.3);
+}
+
+.language-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+}
+
+.skill-breakdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.skill-breakdown:hover {
+    background: var(--border-color);
+}
+
+.skill-name {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.skill-scores {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.skill-score {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    min-width: 60px;
+    text-align: right;
+}
+
+.skill-cefr {
+    padding: 4px 12px;
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    border-radius: 12px;
+    font-family: 'Lora', serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.native-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--accent-color), #FF0000);
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.native-badge i {
+    font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+    .language-card {
+        padding: 25px;
+    }
+
+    .language-name {
+        font-size: 1.5rem;
+    }
+
+    .score-value {
+        font-size: 1.5rem;
+    }
+
+    .skill-score {
+        font-size: 1.1rem;
+    }
+}

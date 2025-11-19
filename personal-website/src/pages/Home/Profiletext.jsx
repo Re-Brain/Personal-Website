@@ -16,6 +16,9 @@ function Profiletext()
             <p className="profile-text-tagline">Full-stack developer with experience in web, mobile, hardware, game development, and AI</p>
             <p className="profile-text-content">Bachelor Degree in Computer Science and Information Engineering</p>
             <p className="profile-text-content">National Dong Hwa University</p>
+            <a href="mailto:cwnditthakit@gmail.com" className="profile-email">
+                <i className="fas fa-envelope"></i> cwnditthakit@gmail.com
+            </a>
              <button 
                 type="button" 
                 id="profile-text-button" 

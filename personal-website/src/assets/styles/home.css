@@ -69,6 +69,30 @@
   transition: color 0.3s ease;
 }
 
+.profile-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.profile-email:hover {
+  color: var(--accent-color);
+  transform: translateX(5px);
+}
+
+.profile-email i {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
 #profile-text-button {
   margin-top: 0.938rem; /* 15px */
   padding: 0.625rem 1.25rem; /* 10px 20px */
@@ -78,6 +102,8 @@
   background-color: var(--button-bg);
   color: white;
   transition: all 0.3s ease;
+  display: block;
+  margin-bottom: 0.938rem;
 }
 
 #profile-text-button:hover {

@@ -1,0 +1,97 @@
+.featured-projects-container {
+    padding: 60px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.featured-projects-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    gap: 20px;
+}
+
+.featured-projects-header-line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+    max-width: 200px;
+}
+
+.featured-projects-header-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.featured-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.view-all-projects {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.view-all-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 40px;
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.view-all-btn:hover {
+    background-color: #FF0000;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(204,0,0,0.3);
+    color: #FFFFFF;
+}
+
+.view-all-btn i {
+    transition: transform 0.3s ease;
+}
+
+.view-all-btn:hover i {
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .featured-projects-container {
+        padding: 40px 15px;
+    }
+
+    .featured-projects-header-title {
+        font-size: 2rem;
+    }
+
+    .featured-projects-header-line {
+        max-width: 100px;
+    }
+
+    .featured-projects-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .view-all-btn {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+}
