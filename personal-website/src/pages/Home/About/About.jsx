@@ -1,25 +1,29 @@
 import React from "react";
+import { useLanguage } from "../../../contexts/LanguageContext";
+import translations from "../../../translations.json";
 import './About.css';
 
 function About() {
+    const { language } = useLanguage();
+    const t = translations[language].about;
+
     return (
         <div className="about-container">
             <div className="about-header-container">
                 <div className="about-header-line"></div>
-                <h1 className="about-header-title">About Me</h1>
+                <h1 className="about-header-title">{t.title}</h1>
                 <div className="about-header-line"></div>
             </div>
             
             <div className="about-content">
                 <p className="about-text">
-                    Fresh graduate from National Dong Hwa University with a B.S. in Computer Science and Information Engineering. 
-                    Experienced in full-stack web development, mobile applications, and cross-platform projects spanning hardware, IoT, and game development.
+                    {t.paragraph1}
                 </p>
                 <p className="about-text">
-                    I've worked across Thailand and Taiwan, developing strong cultural adaptability and collaboration skills with diverse teams.
+                    {t.paragraph2}
                 </p>
                 <p className="about-text">
-                    Currently seeking a full-time position in web development or related fields where I can build innovative solutions and grow as a specialist in modern technologies.
+                    {t.paragraph3}
                 </p>
             </div>
         </div>

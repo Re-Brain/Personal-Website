@@ -1,8 +1,12 @@
 import React from "react";
 import TechItem from "./Tech_Item";
+import { useLanguage } from "../../../contexts/LanguageContext";
+import translations from "../../../translations.json";
 import './Tech.css';
 
 function Tech() {
+    const { language } = useLanguage();
+    const t = translations[language].tech;
     const techData = [
         {
             category: "Frontend",
@@ -54,7 +58,7 @@ function Tech() {
         <div className="tech-container">
             <div className="tech-header-container">
                 <div className="tech-header-line"></div>
-                <h1 className="tech-header-title">Skills & Technologies</h1>
+                <h1 className="tech-header-title">{t.title}</h1>
                 <div className="tech-header-line"></div>
             </div>
             

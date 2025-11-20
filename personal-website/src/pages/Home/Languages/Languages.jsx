@@ -1,37 +1,41 @@
 import React from "react";
 import LanguageCard from "./LanguageCard";
+import { useLanguage } from "../../../contexts/LanguageContext";
+import translations from "../../../translations.json";
 import './Languages.css';
 
 function Languages() {
-    const languages = [
+    const { language } = useLanguage();
+    const t = translations[language].languages;
+    const languagesData = [
         {
-            language: "Thai",
-            proficiency: "Native",
-            test: "Native Speaker",
+            language: t.thaiName,
+            proficiency: t.thaiProficiency,
+            test: t.thaiTest,
             totalScore: null,
-            cefrLevel: "Native",
+            cefrLevel: t.thaiProficiency,
             details: null
         },
         {
-            language: "English",
-            proficiency: "Professional Working Proficiency",
-            test: "TOEIC",
+            language: t.englishName,
+            proficiency: t.englishProficiency,
+            test: t.englishTest,
             totalScore: 865,
             cefrLevel: "B2",
             details: [
-                { skill: "Listening", score: 455, cefr: "B2" },
-                { skill: "Reading", score: 410, cefr: "B2" }
+                { skill: t.listening, score: 455, cefr: "B2" },
+                { skill: t.reading, score: 410, cefr: "B2" }
             ]
         },
         {
-            language: "Chinese (Mandarin)",
-            proficiency: "Elementary Proficiency",
-            test: "TOCFL",
+            language: t.chineseName,
+            proficiency: t.chineseProficiency,
+            test: t.chineseTest,
             totalScore: 845,
             cefrLevel: "Level 1",
             details: [
-                { skill: "Listening", score: 430, cefr: "A1" },
-                { skill: "Reading", score: 415, cefr: "A1" }
+                { skill: t.listening, score: 430, cefr: "A1" },
+                { skill: t.reading, score: 415, cefr: "A1" }
             ]
         }
     ];
@@ -40,12 +44,12 @@ function Languages() {
         <div className="languages-container">
             <div className="languages-header-container">
                 <div className="languages-header-line"></div>
-                <h1 className="languages-header-title">Languages</h1>
+                <h1 className="languages-header-title">{t.title}</h1>
                 <div className="languages-header-line"></div>
             </div>
 
             <div className="languages-grid">
-                {languages.map((lang, index) => (
+                {languagesData.map((lang, index) => (
                     <LanguageCard
                         key={index}
                         language={lang.language}
@@ -60,7 +64,7 @@ function Languages() {
 
             <div className="languages-note">
                 <i className="fas fa-info-circle"></i>
-                <span>Official test certificates available upon request via email</span>
+                <span>{t.note}</span>
             </div>
         </div>
     );

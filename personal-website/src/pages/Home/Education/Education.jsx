@@ -1,43 +1,47 @@
 import React from "react";
 import EdLoc from "./Ed_loc";
+import { useLanguage } from "../../../contexts/LanguageContext";
+import translations from "../../../translations.json";
 
 import '../../../assets/styles/setting.css';
 import '../../../assets/styles/home.css';
 import './Education.css';
 
 function Education() {
+    const { language } = useLanguage();
+    const t = translations[language].education;
+
     return (
         <div>
             <div className="education-header-container">
                 <div className="education-header-line"></div>
-                <h1 className="education-header-title">Education</h1>
+                <h1 className="education-header-title">{t.title}</h1>
                 <div className="education-header-line"></div>
             </div>
             
             <div className="education-timeline">
                 <EdLoc 
                     year="2021 - 2025"
-                    degree="Bachelor of Computer Science & Information Engineering"
-                    school="National Dong Hwa University"
-                    note="(Advanced directly from Grade 11)"
+                    degree={t.bachelorDegree}
+                    school={t.ndhuSchool}
                 />
                 
                 <EdLoc 
                     year="2020"
-                    degree="High School - Grade 11"
-                    school="Benjamarachutit School, Thailand"
+                    degree={t.highSchoolGrade11}
+                    school={t.benjamarachutitThailand}
                 />
                 
                 <EdLoc 
                     year="2019"
-                    degree="Exchange Student - Grade 10"
-                    school="Mountain Home High School, USA"
+                    degree={t.exchangeGrade10}
+                    school={t.mountainHomeUSA}
                 />
                 
                 <EdLoc 
                     year="Before 2019"
-                    degree="Secondary Education"
-                    school="Benjamarachutit School, Thailand"
+                    degree={t.secondaryEducation}
+                    school={t.benjamarachutitThailand}
                 />
             </div>
         </div>

@@ -1,8 +1,12 @@
 import React from "react";
 import CS50Project from "./CS50Project";
+import { useLanguage } from "../../contexts/LanguageContext";
+import translations from "../../translations.json";
 
 function CS50()
 {
+    const { language } = useLanguage();
+    const t = translations[language].projects;
     const upperItems = [
         {header : "Project 0: Search", content : "Design a front-end for Google Search , Google Image Search, and Google Advance Search", github : "https://github.com/Re-Brain/CS50Web-Search", video : "https://www.youtube.com/watch?v=MFwsdcJfaPA"},
         {header : "Project 1: Wiki", content : "Design a Wikipedia-like online encyclopedia", github : "https://github.com/Re-Brain/CS50Web-Wiki" , video : "https://youtu.be/geZ25ztPPwc?si=8L6zYXKueyBjOI9B"},
@@ -18,7 +22,7 @@ function CS50()
         <div id="CS50-container">
            <div className="cs50-header-container">
                <div className="cs50-header-line"></div>
-               <p className="cs50-header-title">CS50's Web Programming with Python and JavaScript</p>
+               <p className="cs50-header-title">{t.cs50Title}</p>
                <div className="cs50-header-line"></div>
            </div>
            <div id="CS50-upper-items">

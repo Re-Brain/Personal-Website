@@ -1,0 +1,310 @@
+{
+  "en": {
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "profile": {
+      "greeting": "Hello, I'm Brain",
+      "title": "Software Engineer",
+      "tagline": "Full-stack developer with experience in web, mobile, hardware, game development, and AI",
+      "degree": "Bachelor Degree in Computer Science and Information Engineering",
+      "university": "National Dong Hwa University",
+      "contactButton": "Contact Me"
+    },
+    "about": {
+      "title": "About Me",
+      "paragraph1": "Fresh graduate from National Dong Hwa University with a B.S. in Computer Science and Information Engineering. Experienced in full-stack web development, mobile applications, and cross-platform projects spanning hardware, IoT, and game development.",
+      "paragraph2": "I've worked across Thailand and Taiwan, developing strong cultural adaptability and collaboration skills with diverse teams.",
+      "paragraph3": "Currently seeking a full-time position in web development or related fields where I can build innovative solutions and grow as a specialist in modern technologies."
+    },
+    "education": {
+      "title": "Education",
+      "bachelor": "Bachelor of Science",
+      "major": "Computer Science and Information Engineering",
+      "university": "National Dong Hwa University",
+      "location": "Hualien, Taiwan",
+      "period": "September 2021 - June 2025",
+      "gpa": "GPA: 3.65/4.00",
+      "bachelorDegree": "Bachelor of Computer Science & Information Engineering",
+      "ndhuSchool": "National Dong Hwa University, Taiwan",
+      "advancedNote": "(Advanced directly from Grade 11)",
+      "highSchoolGrade11": "High School - Grade 11",
+      "benjamarachutitThailand": "Benjamarachutit School, Thailand",
+      "exchangeGrade10": "Exchange Student - Grade 10",
+      "mountainHomeUSA": "Mountain Home High School, USA",
+      "secondaryEducation": "Secondary Education"
+    },
+    "languages": {
+      "title": "Languages",
+      "thai": "Thai",
+      "thaiLevel": "Native",
+      "english": "English",
+      "englishLevel": "TOEIC 865 (B2)",
+      "chinese": "Chinese",
+      "chineseLevel": "TOCFL Band A Level 1 (845)",
+      "thaiName": "Thai",
+      "thaiProficiency": "Native",
+      "thaiTest": "Native Speaker",
+      "englishName": "English",
+      "englishProficiency": "Professional Working Proficiency",
+      "englishTest": "TOEIC",
+      "chineseName": "Chinese (Mandarin)",
+      "chineseProficiency": "Elementary Proficiency",
+      "chineseTest": "TOCFL",
+      "listening": "Listening",
+      "reading": "Reading",
+      "totalScore": "Total Score:",
+      "note": "Official test certificates available upon request via email"
+    },
+    "tech": {
+      "title": "Tech Stack",
+      "webDev": "Web Development",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "mobile": "Mobile Development",
+      "game": "Game Development",
+      "hardware": "Hardware & IoT",
+      "ml": "Machine Learning",
+      "tools": "Tools & Platforms",
+      "design": "Design",
+      "languages": "Programming Languages"
+    },
+    "github": {
+      "title": "GitHub Contributions",
+      "contributions": "contributions in the last year",
+      "publicRepos": "Public repositories",
+      "viewProfile": "View Full GitHub Profile"
+    },
+    "featuredProjects": {
+      "title": "Featured Projects",
+      "viewAll": "View All Projects",
+      "airGuitar": {
+        "title": "Air Guitar Gloves Project",
+        "description": "Hardware-based guitar simulation with interactive gloves and mobile game integration using Unity. Features tutorial mode, game mode, and performance mode for learning guitar.",
+        "achievements": ["Mobile game with 3 interactive modes", "Hardware glove integration", "Real-time chord detection"]
+      },
+      "plantDatabase": {
+        "title": "Rajamangalaphisek Plant Database",
+        "description": "Full-stack plant database system with 100+ plants collection. Features user interface for plant exploration and admin dashboard for data management.",
+        "achievements": ["100+ plant records", "Advanced search functionality", "Admin management system"]
+      },
+      "milk": {
+        "title": "MILK - Livestock Management System",
+        "description": "AI-powered livestock management system using YOLOv8 and TensorFlow for cattle tracking, counting, and facial identification with 95% accuracy.",
+        "achievements": ["95% facial recognition accuracy", "7 individual cattle identification", "Automated video processing"]
+      }
+    },
+    "getInTouch": {
+      "title": "Get In Touch",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "resume": "Resume",
+      "contactPage": "Contact Page"
+    },
+    "projects": {
+      "title": "My Projects",
+      "cs50Title": "CS50 Projects",
+      "techStack": "Tech Stack",
+      "links": "Links",
+      "demo": "Demo",
+      "github": "GitHub",
+      "report": "Report",
+      "airGuitar": {
+        "title": "Air Guitar",
+        "description": "A hardware project that transforms hand movements into guitar sounds using Arduino and Processing. Features motion detection sensors and real-time audio processing to create an interactive musical experience."
+      },
+      "napTrap": {
+        "title": "Nap Trap",
+        "description": "An IoT alarm system that helps prevent oversleeping. Uses ESP32 microcontroller with sensors to detect user activity and trigger alarms through a mobile app interface."
+      },
+      "plantDatabase": {
+        "title": "Plant Database",
+        "description": "A comprehensive web application for plant enthusiasts to catalog and manage their plant collections. Features include search, filtering, and detailed plant care information with an intuitive user interface."
+      },
+      "milk": {
+        "title": "MILK",
+        "description": "A mobile game developed using Unity and C#. Features engaging gameplay mechanics, smooth animations, and an intuitive touch-based control system for an immersive gaming experience."
+      },
+      "swiftUI": {
+        "title": "SwiftUI Portfolio",
+        "description": "A collection of iOS applications built with SwiftUI, showcasing modern iOS development practices, MVVM architecture, and native Apple frameworks integration."
+      },
+      "faceMatching": {
+        "title": "Face Matching Program",
+        "description": "An AI-powered facial recognition system that uses machine learning to identify and match faces. Implements computer vision techniques for accurate face detection and comparison."
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "subtext": "I'd love to hear from you. Fill out the form below and I'll get back to you as soon as possible.",
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email",
+      "subjectPlaceholder": "Subject",
+      "contentPlaceholder": "Message",
+      "submitButton": "Send Message",
+      "successMessage": "Message sent successfully! I'll get back to you soon.",
+      "errorMessage": "Please fill in all fields.",
+      "loading": "Sending..."
+    },
+    "footer": {
+      "rights": "All rights reserved."
+    }
+  },
+  "th": {
+    "nav": {
+      "home": "หน้าแรก",
+      "projects": "โปรเจกต์",
+      "contact": "ติดต่อ"
+    },
+    "profile": {
+      "greeting": "สวัสดีครับ ผมเบรน",
+      "title": "วิศวกรซอฟต์แวร์ (Software Engineer)",
+      "tagline": "นักพัฒนาฟูลสแตกที่เชี่ยวชาญด้านเว็บ, มือถือ, ฮาร์ดแวร์, การพัฒนาเกม และ AI",
+      "degree": "ปริญญาตรีวิทยาการคอมพิวเตอร์และวิศวกรรมสารสนเทศ",
+      "university": "มหาวิทยาลัยแห่งชาติ ตง ฮวา (National Dong Hwa University)",
+      "contactButton": "ติดต่อ"
+    },
+    "about": {
+      "title": "เรื่องราวเกี่ยวกับผม",
+      "paragraph1": "ผมเป็นบัณฑิตจบใหม่จากมหาวิทยาลัยแห่งชาติ ตง ฮวา (National Dong Hwa University) สาขาวิทยาการคอมพิวเตอร์และวิศวกรรมสารสนเทศ มีความเชี่ยวชาญในการพัฒนาเว็บไซต์แบบฟูลสแตก (full-stack web development), แอปพลิเคชันมือถือ (mobile applications), และโครงการข้ามแพลตฟอร์มที่ครอบคลุมทั้งด้านฮาร์ดแวร์, IoT, และการพัฒนาเกม",
+      "paragraph2": "ผมได้มีโอกาสทำงานทั้งในประเทศไทยและไต้หวัน ซึ่งช่วยพัฒนาทักษะการปรับตัวเข้ากับวัฒนธรรมที่แตกต่าง (cultural adaptability) และทักษะการทำงานร่วมกับทีมที่มีความหลากหลายได้อย่างมีประสิทธิภาพ",
+      "paragraph3": "ปัจจุบันผมกำลังมองหาตำแหน่งงานเต็มเวลาด้านการพัฒนาเว็บไซต์ (web development) หรือสาขาที่เกี่ยวข้อง ซึ่งสามารถใช้ความสามารถในการสร้างสรรค์โซลูชันใหม่ ๆ และเติบโตเป็นผู้เชี่ยวชาญด้านเทคโนโลยีสมัยใหม่ได้"
+    },
+    "education": {
+      "title": "การศึกษา",
+      "bachelor": "ปริญญาตรี วิทยาศาสตรบัณฑิต",
+      "major": "วิทยาการคอมพิวเตอร์และวิศวกรรมสารสนเทศ",
+      "university": "มหาวิทยาลัย National Dong Hwa",
+      "location": "หัวเหลียน ไต้หวัน",
+      "period": "กันยายน 2564 - มิถุนายน 2568",
+      "gpa": "เกรดเฉลี่ย: 3.65/4.00",
+      "bachelorDegree": "ปริญญาตรี วิทยาการคอมพิวเตอร์และวิศวกรรมสารสนเทศ",
+      "ndhuSchool": "มหาวิทยาลัยแห่งชาติ ตง ฮวา, ไต้หวัน",
+      "advancedNote": "(เข้าศึกษาต่อโดยตรงจากชั้นมัธยมศึกษาปีที่ 5)",
+      "highSchoolGrade11": "ระดับมัธยมศึกษา - ชั้นมัธยมศึกษาปีที่ 5",
+      "benjamarachutitThailand": "โรงเรียนเบญจมราชูทิศ, ประเทศไทย",
+      "exchangeGrade10": "นักเรียนแลกเปลี่ยน - ชั้นมัธยมศึกษาปีที่ 4",
+      "mountainHomeUSA": "โรงเรียนเมาน์เทน โฮม ไฮสคูล, สหรัฐอเมริกา",
+      "secondaryEducation": "ระดับมัธยมศึกษาตอนต้น"
+    },
+    "languages": {
+      "title": "ภาษา",
+      "thai": "ไทย",
+      "thaiLevel": "เจ้าของภาษา",
+      "english": "อังกฤษ",
+      "englishLevel": "TOEIC 865 (B2)",
+      "chinese": "จีน",
+      "chineseLevel": "TOCFL Band A Level 1 (845)",
+      "thaiName": "ภาษาไทย",
+      "thaiProficiency": "เจ้าของภาษา",
+      "thaiTest": "เจ้าของภาษา",
+      "englishName": "ภาษาอังกฤษ",
+      "englishProficiency": "ระดับใช้ในการปฏิบัติงานอย่างมืออาชีพ",
+      "englishTest": "TOEIC",
+      "chineseName": "ภาษาจีนกลาง",
+      "chineseProficiency": "ระดับเบื้องต้น",
+      "chineseTest": "TOCFL",
+      "listening": "ทักษะการฟัง",
+      "reading": "ทักษะการอ่าน",
+      "totalScore": "คะแนนรวม:",
+      "note": "สามารถขอใบรับรองผลสอบอย่างเป็นทางการได้ผ่านทางอีเมล"
+    },
+    "tech": {
+      "title": "เทคโนโลยี",
+      "webDev": "การพัฒนาเว็บ",
+      "frontend": "ส่วนหน้า",
+      "backend": "ส่วนหลัง",
+      "database": "ฐานข้อมูล",
+      "mobile": "การพัฒนามือถือ",
+      "game": "การพัฒนาเกม",
+      "hardware": "ฮาร์ดแวร์ & IoT",
+      "ml": "การเรียนรู้ของเครื่อง",
+      "tools": "เครื่องมือและแพลตฟอร์ม",
+      "design": "ดีไซน์",
+      "languages": "ภาษาโปรแกรม"
+    },
+    "github": {
+      "title": "สถิติ GitHub",
+      "contributions": "contributions ในปีที่ผ่านมา",
+      "publicRepos": "repositories สาธารณะ",
+      "viewProfile": "ดูโปรไฟล์ GitHub"
+    },
+    "featuredProjects": {
+      "title": "โปรเจกต์เด่น",
+      "viewAll": "ดูโปรเจกต์ทั้งหมด",
+      "airGuitar": {
+        "title": "โปรเจกต์ถุงมือกีตาร์อากาศ (Air Guitar Gloves)",
+        "description": "เกมแอปพลิเคชั่นที่ถูกพัฒนาโดย Unity พร้อมถุงมือจำลองการเล่นกีตาร์ ในแอปพลิเคชั่นมีโหมดการสอนสำหรับการเรียนรู้การเล่นกีตาร์ โหมดฝึกซ้อม และ โหมดการแสดง",
+        "achievements": ["เกมมือถือที่มาพร้อมกับ 3 ระบบการเล่น", "การทำงานร่วมกันระหว่างฮาร์ดแวร์กับแอปพลิเคชั่น", "การตรวจจับคอร์ดแบบเรียลไทม์"]
+      },
+      "plantDatabase": {
+        "title": "ฐานข้อมูลพืชราชมงคลภิเษก",
+        "description": "ระบบฐานข้อมูลพืชมากกว่า 100 ชนิด พร้อมระบบสำรวจข้อมูลพืชต่างๆและแดชบอร์ดผู้ดูแลระบบสำหรับจัดการข้อมูล",
+        "achievements": ["ข้อมูลพืชมากกว่า 100 รายการ", "ระบบค้นหาแบบละเอียด", "แดชบอร์ดผู้ดูแลระบบสำหรับจัดการข้อมูล"]
+      },
+      "milk": {
+        "title": "MILK - ระบบจัดการปศุสัตว์",
+        "description": "ระบบจัดการปศุสัตว์ที่ขับเคลื่อนด้วย AI โดยใช้ YOLOv8 และ TensorFlow สำหรับ ตรวจจับวัว นับวัว และระบุใบหน้าวัวด้วยความแม่นยำ 95%",
+        "achievements": ["ความแม่นยำในการตรวจใบหน้า 95%", "สามารถระบุใบหน้าของวัวทั้ง 7 ตัว", "ระบบการประมวลผลวิดีโอแบบอัตโนมัติ"]
+      }
+    },
+    "getInTouch": {
+      "title": "ติดต่อผม",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "resume": "เรซูเม่",
+      "contactPage": "ติดต่อ"
+    },
+    "projects": {
+      "title": "โปรเจกต์ของผม",
+      "cs50Title": "โปรเจกต์ CS50",
+      "techStack": "เทคโนโลยีที่ใช้",
+      "links": "ลิงก์",
+      "demo": "Demo",
+      "github": "GitHub",
+      "report": "รายงาน",
+      "airGuitar": {
+        "title": "Air Guitar",
+        "description": "โปรเจกต์ฮาร์ดแวร์ที่แปลงการเคลื่อนไหวของมือให้เป็นเสียงกีตาร์โดยใช้ Arduino และ Processing มีระบบตรวจจับการเคลื่อนไหวและการประมวลผลเสียงแบบเรียลไทม์เพื่อสร้างประสบการณ์ดนตรีเชิงโต้ตอบ"
+      },
+      "napTrap": {
+        "title": "Nap Trap",
+        "description": "ระบบนาฬิกาปลุก IoT ที่ช่วยป้องกันการนอนหลับเกิน ใช้ไมโครคอนโทรลเลอร์ ESP32 พร้อมเซ็นเซอร์เพื่อตรวจจับกิจกรรมของผู้ใช้และส่งสัญญาณเตือนผ่านแอปมือถือ"
+      },
+      "plantDatabase": {
+        "title": "Plant Database",
+        "description": "เว็บแอปพลิเคชันที่ครอบคลุมสำหรับผู้ที่รักต้นไม้ในการจัดเก็บและจัดการคอลเลกชันต้นไม้ มีฟีเจอร์ค้นหา กรอง และข้อมูลการดูแลต้นไม้ที่ละเอียดพร้อมส่วนติดต่อผู้ใช้ที่ใช้งานง่าย"
+      },
+      "milk": {
+        "title": "MILK",
+        "description": "เกมมือถือที่พัฒนาโดยใช้ Unity และ C# มีกลไกเกมเพลย์ที่น่าสนใจ แอนิเมชันที่ลื่นไหล และระบบควบคุมด้วยการสัมผัสที่ใช้งานง่ายเพื่อประสบการณ์การเล่นเกมที่ดื่มด่ำ"
+      },
+      "swiftUI": {
+        "title": "SwiftUI Portfolio",
+        "description": "คอลเลกชันแอปพลิเคชัน iOS ที่สร้างด้วย SwiftUI แสดงแนวทางการพัฒนา iOS สมัยใหม่ สถาปัตยกรรม MVVM และการผสานรวม frameworks ของ Apple"
+      },
+      "faceMatching": {
+        "title": "Face Matching Program",
+        "description": "ระบบจดจำใบหน้าที่ขับเคลื่อนด้วย AI ซึ่งใช้การเรียนรู้ของเครื่องในการระบุและจับคู่ใบหน้า ใช้เทคนิค computer vision เพื่อการตรวจจับและเปรียบเทียบใบหน้าที่แม่นยำ"
+      }
+    },
+    "contact": {
+      "title": "ติดต่อ",
+      "subtext": "ผมยินดีที่จะรับฟังจากคุณ กรุณากรอกแบบฟอร์มด้านล่างและผมจะติดต่อกลับโดยเร็วที่สุด",
+      "namePlaceholder": "ชื่อ",
+      "emailPlaceholder": "อีเมล",
+      "subjectPlaceholder": "หัวข้อ",
+      "contentPlaceholder": "ข้อความ",
+      "submitButton": "ส่งข้อความ",
+      "successMessage": "ส่งข้อความสำเร็จ! ผมจะติดต่อกลับเร็วๆ นี้",
+      "errorMessage": "กรุณากรอกข้อมูลให้ครบทุกช่อง",
+      "loading": "กำลังส่ง..."
+    },
+    "footer": {
+      "rights": "สงวนลิขสิทธิ์"
+    }
+  }
+}

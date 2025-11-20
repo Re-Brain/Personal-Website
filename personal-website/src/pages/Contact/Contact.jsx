@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import { useLanguage } from "../../contexts/LanguageContext";
+import translations from "../../translations.json";
 
 import '../../assets/styles/contact.css';
 import '../../assets/styles/notification.css';
 
 function Contact(props)
 {
+    const { language } = useLanguage();
+    const t = translations[language].contact;
     // State to track form data
     const [formData, setFormData] = useState({
         Name: "",
@@ -88,7 +92,12 @@ function Contact(props)
     return (
       <div id="contact-container">
         <div>
-          <p id="contact-header">Contact</p>
+          <div className="contact-header-container">
+            <div className="contact-header-line"></div>
+            <h1 className="contact-header-title">{t.title}</h1>
+            <div className="contact-header-line"></div>
+          </div>
+          <p className="contact-subtext">{t.subtext}</p>
           <form id="contact-form" onSubmit={handleSubmit}>
             <input
               type="hidden"
@@ -97,7 +106,7 @@ function Contact(props)
             />
             {showSuccessNotification && (
               <div className="notification">
-                <p>Submission successful!</p>
+                <p>{t.successMessage}</p>
                 <button onClick={closeSuccess}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +124,7 @@ function Contact(props)
             )}
             {showAlertNotification && (
               <div className="notification">
-                <p>Please fill in all fields!</p>
+                <p>{t.errorMessage}</p>
                 <button onClick={closeAlert}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +152,7 @@ function Contact(props)
                 type="text"
                 className="form-control"
                 name="Name"
-                placeholder="Name"
+                placeholder={t.namePlaceholder}
                 value={formData.Name}
                 onChange={handleChange}
               />
@@ -153,7 +162,7 @@ function Contact(props)
                 type="email"
                 className="form-control"
                 name="Email"
-                placeholder="Email"
+                placeholder={t.emailPlaceholder}
                 value={formData.Email}
                 onChange={handleChange}
               />
@@ -163,7 +172,7 @@ function Contact(props)
                 type="text"
                 className="form-control"
                 name="Subject"
-                placeholder="Subject"
+                placeholder={t.subjectPlaceholder}
                 value={formData.Subject}
                 onChange={handleChange}
               />
@@ -173,13 +182,13 @@ function Contact(props)
                 className="form-control"
                 name="Content"
                 rows="10"
-                placeholder="Content"
+                placeholder={t.contentPlaceholder}
                 value={formData.Content}
                 onChange={handleChange}
               ></textarea>
             </div>
             <button type="submit" className="btn">
-              Submit
+              {t.submitButton}
             </button>
           </form>
         </div>

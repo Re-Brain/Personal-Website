@@ -1,8 +1,12 @@
 import React from "react";
+import { useLanguage } from "../../../contexts/LanguageContext";
+import translations from "../../../translations.json";
 import './LanguageCard.css';
 
 function LanguageCard({ language, proficiency, test, totalScore, cefrLevel, details }) {
-    const isNative = !totalScore && test === "Native Speaker";
+    const { language: currentLang } = useLanguage();
+    const t = translations[currentLang].languages;
+    const isNative = !totalScore && (test === "Native Speaker" || test === "เจ้าของภาษา");
     
     return (
         <div className="language-card">
@@ -17,7 +21,7 @@ function LanguageCard({ language, proficiency, test, totalScore, cefrLevel, deta
                     {totalScore && (
                         <>
                             <div className="total-score">
-                                <span className="score-label">Total Score:</span>
+                                <span className="score-label">{t.totalScore}</span>
                                 <span className="score-value">{totalScore}</span>
                             </div>
                             <div className="cefr-level">

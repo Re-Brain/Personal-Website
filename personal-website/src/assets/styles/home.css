@@ -55,7 +55,7 @@
   line-height: 1.6;
   color: var(--text-secondary);
   margin-bottom: 0 !important;
-  max-width: 600px;
+  max-width: 1000px;
   transition: color 0.3s ease;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.2);
@@ -116,11 +116,13 @@
   #home-container {
     /* Remove fixed height */
     width: 100%;
+    padding: 1.5rem 0;
   }
 
   .profile-section {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   #profile-text-header {
@@ -131,6 +133,15 @@
   #profile-text-container {
     text-align: center;
   }
+
+  #profile-text-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-email {
+    justify-content: center;
+  }
 }
 
 /* Tablets and large phones (800px and down) */
@@ -138,6 +149,11 @@
   #home-container {
     /* Remove fixed height */
     width: 100%;
+    padding: 1rem 0;
+  }
+
+  .profile-section {
+    margin-bottom: 0.5rem;
   }
 
   #profile-pic img {
@@ -154,6 +170,12 @@
     font-size: 2.5rem; /* 40px */
   }
 
+  .profile-text-tagline {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
   .profile-text-content {
     white-space: wrap;
   }
@@ -161,6 +183,17 @@
   .profile-text-content {
     font-size: 1.25rem; /* 20px */
     text-align: center;
+  }
+
+  #profile-text-button {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .profile-email {
+    justify-content: center;
   }
 }
 
@@ -173,20 +206,39 @@
 
   #profile-text-header {
     font-size: 2rem; /* 32px */
-    white-space: nowrap;
+    white-space: normal;
   }
 
   #profile-text-subheader {
-    font-size: 1.75rem; /* 28px */
+    font-size: 1.5rem; /* 24px */
     margin-bottom: 0.625rem !important; /* 10px */
+    white-space: normal;
+  }
+
+  .profile-text-tagline {
+    font-size: 0.95rem;
+    text-align: center;
+    max-width: 100%;
+    line-height: 1.5;
   }
 
   .profile-text-content {
     font-size: 1.125rem; /* 18px */
+    white-space: normal;
   }
 
   #profile-text-button {
-    font-size: 1.125rem; /* 18px */
+    font-size: 1rem;
+    padding: 0.625rem 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 200px;
+  }
+
+  .profile-email {
+    font-size: 1rem;
+    justify-content: center;
   }
 }
 

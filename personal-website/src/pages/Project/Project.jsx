@@ -1,6 +1,8 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import CS50 from "./CS50";
+import { useLanguage } from "../../contexts/LanguageContext";
+import translations from "../../translations.json";
 
 import '../../assets/styles/project.css';
 
@@ -33,6 +35,9 @@ import faceMatchingImg from "../../assets/images/notInDataImage.png"
 
 function Project()
 {
+    const { language } = useLanguage();
+    const t = translations[language].projects;
+
     // Air Guitar Project data
     const airGuitarData = {
         title: "Air Guitar Gloves Project – Hardware-based Guitar Simulation with Interactive Gloves and Mobile Game Integration",
@@ -141,7 +146,7 @@ function Project()
             <div>
                 <div className="project-page-header-container">
                     <div className="project-page-header-line"></div>
-                    <h1 className="project-page-header-title">Projects</h1>
+                    <h1 className="project-page-header-title">{t.title}</h1>
                     <div className="project-page-header-line"></div>
                 </div>
                 

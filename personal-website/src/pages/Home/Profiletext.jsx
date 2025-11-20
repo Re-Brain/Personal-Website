@@ -1,9 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "../../contexts/LanguageContext";
+import translations from "../../translations.json";
 
 function Profiletext()
 {
     const navigate = useNavigate();
+    const { language } = useLanguage();
+    const t = translations[language].profile;
 
     const handleClick = () => {
         navigate('/contact');
@@ -11,11 +15,11 @@ function Profiletext()
 
     return (
         <div id="profile-text-container">
-            <p id="profile-text-header">Hello, I'm Brain</p>
-            <p id="profile-text-subheader">Software Engineer</p>
-            <p className="profile-text-tagline">Full-stack developer with experience in web, mobile, hardware, game development, and AI</p>
-            <p className="profile-text-content">Bachelor Degree in Computer Science and Information Engineering</p>
-            <p className="profile-text-content">National Dong Hwa University</p>
+            <p id="profile-text-header">{t.greeting}</p>
+            <p id="profile-text-subheader">{t.title}</p>
+            <p className="profile-text-tagline">{t.tagline}</p>
+            <p className="profile-text-content">{t.degree}</p>
+            <p className="profile-text-content">{t.university}</p>
             <a href="mailto:cwnditthakit@gmail.com" className="profile-email">
                 <i className="fas fa-envelope"></i> cwnditthakit@gmail.com
             </a>
@@ -25,7 +29,7 @@ function Profiletext()
                 className="btn btn-dark"
                 onClick={handleClick}
             >
-                Contact Me
+                {t.contactButton}
             </button>
         </div>
     )

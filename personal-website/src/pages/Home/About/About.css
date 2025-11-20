@@ -58,6 +58,14 @@
 }
 
 @media (max-width: 768px) {
+    .about-container {
+        margin: 2rem auto;
+    }
+
+    .about-header-container {
+        margin-bottom: 2rem;
+    }
+
     .about-header-title {
         font-size: 2rem;
     }

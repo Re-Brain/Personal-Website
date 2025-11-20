@@ -1,9 +1,13 @@
 import React from "react";
 import StatCard from "./StatCard";
 import LanguageItem from "./LanguageItem";
+import { useLanguage } from "../../../contexts/LanguageContext";
+import translations from "../../../translations.json";
 import './GitHub.css';
 
 function GitHub() {
+    const { language } = useLanguage();
+    const t = translations[language].github;
     const username = "Re-Brain";
 
     const stats = [
@@ -25,7 +29,7 @@ function GitHub() {
         <div className="github-container">
             <div className="github-header-container">
                 <div className="github-header-line"></div>
-                <h1 className="github-header-title">GitHub Activity</h1>
+                <h1 className="github-header-title">{t.title}</h1>
                 <div className="github-header-line"></div>
             </div>
 
@@ -38,7 +42,7 @@ function GitHub() {
                         rel="noopener noreferrer"
                         className="github-button"
                     >
-                        <i className="fab fa-github"></i> View Full GitHub Profile
+                        <i className="fab fa-github"></i> {t.viewProfile}
                     </a>
                 </div>
 

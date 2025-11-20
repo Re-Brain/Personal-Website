@@ -36,6 +36,15 @@
 }
 
 @media (max-width: 768px) {
+    .education-header-container {
+        margin: 2rem auto;
+    }
+
+    .education-timeline {
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+
     .education-header-title {
         font-size: 2rem;
     }
