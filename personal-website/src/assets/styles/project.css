@@ -16,6 +16,33 @@
     font-weight: bold;
 }
 
+/* Projects Page Header with decorative lines */
+.project-page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.project-page-header-line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+    max-width: 250px;
+}
+
+.project-page-header-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
 .project-container
 {
     display: flex;
@@ -38,20 +65,33 @@
 .carousel-btn {
     position: absolute;
     background: var(--accent-color);
-    opacity: 0.8;
     color: white;
     border: none;
     padding: 1rem;
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
     z-index: 2;
-    border-radius: 25%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .carousel-btn:hover {
-    opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.15);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+[data-theme="dark"] .carousel-btn {
+    background: #FF3333;
+}
+
+[data-theme="light"] .carousel-btn {
+    background: #CC0000;
 }
 
 .prev {
@@ -93,19 +133,28 @@
 
 .project-detail
 {
-    padding: 20px;
+    padding: 30px;
     background-color: var(--card-bg);
     color: var(--text-primary);
-    border-radius: 10px;
+    border-radius: 12px;
     width: 75%;
     transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.project-container:hover .project-detail {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
 }
 
 .project-header
 {
-    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.875rem;
     color: var(--accent-color);
-    opacity: 0.9;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .project-content
@@ -132,7 +181,19 @@
     color: var(--accent-color);
     font-size: 25px;
     margin: 5px;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.project-tech > a > i:hover {
+    transform: scale(1.2);
+}
+
+[data-theme="dark"] .project-tech > a > i:hover {
+    color: #FF3333;
+}
+
+[data-theme="light"] .project-tech > a > i:hover {
+    color: #CC0000;
 }
 
 video
@@ -148,7 +209,8 @@ video
 #CS50-container
 {
     width: 75%;
-    margin: 0 auto;
+    margin: 80px auto 0;
+    padding-top: 60px;
 }
 
 #CS50-header
@@ -156,6 +218,32 @@ video
     font-size: 32px;
     text-align: center;
     color: var(--accent-color);
+}
+
+/* CS50 Header with decorative lines */
+.cs50-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.cs50-header-line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+    max-width: 150px;
+}
+
+.cs50-header-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 #CS50-upper-items
@@ -181,14 +269,25 @@ video
     padding: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 10px;
+    border-radius: 12px;
     transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.CS50Project-container:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
 }
 
 .CS50Project-header
 {
+    font-family: 'Playfair Display', serif;
     color: var(--accent-color);
-    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
 .CS50Project-content
@@ -211,11 +310,22 @@ video
 {
     font-size: 25px;
     text-decoration: none;
-    /* padding: 10px; */
     margin: 5px;
     border-radius: 10px;
     color: var(--accent-color);
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.CS50Project-link:hover {
+    transform: scale(1.2);
+}
+
+[data-theme="dark"] .CS50Project-link:hover {
+    color: #FF3333;
+}
+
+[data-theme="light"] .CS50Project-link:hover {
+    color: #CC0000;
 }
 
 /* Media Queries */

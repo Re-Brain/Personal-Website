@@ -16,7 +16,11 @@ function CS50()
 
     return (
         <div id="CS50-container">
-           <p id="CS50-header">CS50’s Web Programming with Python and JavaScript Projects</p>
+           <div className="cs50-header-container">
+               <div className="cs50-header-line"></div>
+               <p className="cs50-header-title">CS50's Web Programming with Python and JavaScript</p>
+               <div className="cs50-header-line"></div>
+           </div>
            <div id="CS50-upper-items">
                 {
                     upperItems.map((item, index) => {
