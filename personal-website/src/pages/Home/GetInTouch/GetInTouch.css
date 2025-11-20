@@ -1,0 +1,106 @@
+.get-in-touch-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.get-in-touch-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    gap: 20px;
+}
+
+.get-in-touch-header-line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+    max-width: 200px;
+}
+
+.get-in-touch-header-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.contact-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-link-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 2rem 1rem;
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-link-btn i {
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.contact-link-btn:hover {
+    border-color: #CC0000;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(204, 0, 0, 0.15);
+    color: var(--text-color);
+}
+
+.contact-link-btn:hover i {
+    color: #CC0000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .get-in-touch-container {
+        padding: 3rem 1.5rem;
+    }
+
+    .contact-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .contact-link-btn {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .contact-link-btn i {
+        font-size: 1.75rem;
+    }
+
+    .contact-link-btn span {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-links-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+}

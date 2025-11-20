@@ -20,19 +20,89 @@
     width: 100%;
     height: auto;
     padding: 25px !important;
+    gap: 60px;
 }
 
-#navbar a 
+.nav-item {
+    list-style: none;
+    position: relative;
+}
+
+#navbar a,
+.nav-link
 {
-    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
     text-decoration: none;
     color: var(--nav-text);
+    position: relative;
+    padding: 8px 0;
     transition: color 0.3s ease;
 }
 
-#navbar a:hover {
-    color: var(--text-primary);
-    opacity: 0.8;
+/* Underline animation */
+#navbar a::after,
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #CC0000;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+#navbar a:hover,
+.nav-link:hover {
+    color: #CC0000;
+}
+
+#navbar a:hover::after,
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Active page indicator */
+.nav-link.active {
+    color: #CC0000;
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    width: 100%;
+    background-color: #CC0000;
+}
+
+/* Light theme adjustments */
+[data-theme="light"] #navbar a:hover,
+[data-theme="light"] .nav-link:hover {
+    color: #CC0000;
+}
+
+[data-theme="light"] .nav-link.active {
+    color: #CC0000;
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] #navbar a:hover,
+[data-theme="dark"] .nav-link:hover {
+    color: #FF3333;
+}
+
+[data-theme="dark"] #navbar a:hover::after,
+[data-theme="dark"] .nav-link:hover::after {
+    background-color: #FF3333;
+}
+
+[data-theme="dark"] .nav-link.active {
+    color: #FF3333;
+}
+
+[data-theme="dark"] .nav-link.active::after {
+    background-color: #FF3333;
 }
 
 .open-menu, .close-menu

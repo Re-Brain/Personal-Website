@@ -7,6 +7,7 @@ import Languages from "./Languages/Languages";
 import Tech from "./Tech/Tech";
 import GitHub from "./GitHub/GitHub";
 import FeaturedProjects from "./Projects/FeaturedProjects";
+import GetInTouch from "./GetInTouch/GetInTouch";
 
 import '../../assets/styles/home.css';
 import '../../assets/styles/about.css';
@@ -32,6 +33,8 @@ function Home() {
             <GitHub />
 
             <FeaturedProjects />
+
+            <GetInTouch />
         </>
     )
 }
