@@ -32,14 +32,18 @@ function ProjectCard({
                     </video>
                 ) : (
                     <>
-                        <button className="carousel-btn prev" onClick={prevImage}>❮</button>
+                        {images.length > 1 && (
+                            <button className="carousel-btn prev" onClick={prevImage}>❮</button>
+                        )}
                         <img
                             className={imageClassName}
                             src={images[currentImageIndex].src}
                             alt={images[currentImageIndex].alt}
                             loading="lazy"
                         />
-                        <button className="carousel-btn next" onClick={nextImage}>❯</button>
+                        {images.length > 1 && (
+                            <button className="carousel-btn next" onClick={nextImage}>❯</button>
+                        )}
                     </>
                 )}
             </div>

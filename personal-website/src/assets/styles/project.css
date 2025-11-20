@@ -106,8 +106,8 @@
 
 .project-img, .project-img-aora
 {
-    width: 750px;
-    height: 450px;
+    width: 900px;
+    height: 550px;
     border-radius: 10px;
     border: 5px solid var(--accent-color);
     object-fit: cover;
@@ -368,6 +368,14 @@ video
         padding: 0 3rem; /* Reduce padding on smaller screens */
     }
 
+    .project-img, video {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        min-height: 400px;
+        object-fit: cover;
+    }
+
     .carousel-btn {
         padding: 0.75rem;
         font-size: 1rem;
@@ -425,18 +433,24 @@ video
     }
 
     .project-img, video {
-        width: clamp(250px, 90vw, 350px);
+        width: 100%;
+        max-width: 400px;
         height: auto;
-        aspect-ratio: 16/9;
+        min-height: 250px;
+        object-fit: cover;
     }
 
     .project-img-aora {
-        width: clamp(180px, 50vw, 200px);
-        aspect-ratio: 9/16;
+        width: clamp(200px, 50vw, 250px);
+        height: auto;
+        min-height: 400px;
+        object-fit: cover;
     }
 
     .project-display {
         padding: 0 1.3rem; /* Further reduce padding on mobile */
+        width: 100%;
+        max-width: 100%;
     }
 
     #CS50-header {
