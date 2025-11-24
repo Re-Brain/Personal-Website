@@ -20,11 +20,11 @@ function Languages() {
             language: t.englishName,
             proficiency: t.englishProficiency,
             test: t.englishTest,
-            totalScore: 865,
+            totalScore: 895,
             cefrLevel: "B2",
             details: [
-                { skill: t.listening, score: 455, cefr: "B2" },
-                { skill: t.reading, score: 410, cefr: "B2" }
+                { skill: t.listening, score: 480, cefr: "B2" },
+                { skill: t.reading, score: 415, cefr: "B2" }
             ]
         },
         {

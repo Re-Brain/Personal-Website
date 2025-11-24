@@ -22,9 +22,9 @@ function ProjectCard({ title, images, content, technologies, links }) {
                     <button className="carousel-btn prev" onClick={prevImage}>❮</button>
                 )}
                 <img
-                    className="project-img-mobile"
-                    src={images[currentImageIndex]}
-                    alt={`${title} - Img ${currentImageIndex + 1}`}
+                    className={images[currentImageIndex].className || "project-img-mobile"}
+                    src={images[currentImageIndex].src}
+                    alt={images[currentImageIndex].alt}
                     loading="lazy"
                 />
                 {images.length > 1 && (

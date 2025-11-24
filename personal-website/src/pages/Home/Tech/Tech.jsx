@@ -46,7 +46,7 @@ function Tech() {
         },
         {
             category: "Automation",
-            skills: ["n8n"]
+            skills: ["n8n (Learning)"]
         },
         {
             category: "Soft Skills",

@@ -124,6 +124,16 @@
     transition: border-color 0.3s ease;
 }
 
+.project-img-gloves
+{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid var(--accent-color);
+    object-fit: contain;
+    transition: border-color 0.3s ease;
+}
+
 .project-img-aora
 {
     width: 320px;
@@ -162,11 +172,14 @@
     font-size: 24px;
     width: 100%;
     margin-top: 10px !important;
-    text-align: justify;
+    text-align: left;
     hyphens: auto;
     -webkit-hyphens: auto;
     word-spacing: -0.05em;
     color: var(--text-primary);
+    word-break: normal;
+    overflow-wrap: break-word;
+    text-align-last: left;
 }
 
 .project-tech

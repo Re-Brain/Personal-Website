@@ -25,30 +25,30 @@ function ProjectCard({
 
     return (
         <div className="project-container">
-            <div className="project-display">
-                {videoSrc ? (
-                    <video controls width="600" height="300">
-                        <source className="project-video" src={videoSrc} type="video/mp4" />
-                    </video>
-                ) : (
-                    <>
-                        {images.length > 1 && (
-                            <button className="carousel-btn prev" onClick={prevImage}>❮</button>
-                        )}
-                        <img
-                            className={imageClassName}
-                            src={images[currentImageIndex].src}
-                            alt={images[currentImageIndex].alt}
-                            loading="lazy"
-                        />
-                        {images.length > 1 && (
-                            <button className="carousel-btn next" onClick={nextImage}>❯</button>
-                        )}
-                    </>
-                )}
-            </div>
-
-            <div className="project-detail">
+            {(videoSrc || images.length > 0) && (
+                <div className="project-display">
+                    {videoSrc ? (
+                        <video controls width="600" height="300">
+                            <source className="project-video" src={videoSrc} type="video/mp4" />
+                        </video>
+                    ) : (
+                        <>
+                            {images.length > 1 && (
+                                <button className="carousel-btn prev" onClick={prevImage}>❮</button>
+                            )}
+                            <img
+                                className={images[currentImageIndex].className || imageClassName}
+                                src={images[currentImageIndex].src}
+                                alt={images[currentImageIndex].alt}
+                                loading="lazy"
+                            />
+                            {images.length > 1 && (
+                                <button className="carousel-btn next" onClick={nextImage}>❯</button>
+                            )}
+                        </>
+                    )}
+                </div>
+            )}            <div className="project-detail">
                 <p className="project-header">{title}</p>
 
                 {paragraphs.map((paragraph, index) => (
