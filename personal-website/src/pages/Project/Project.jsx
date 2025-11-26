@@ -112,7 +112,8 @@ function Project()
         techStack: ["Frontend: HTML, CSS, JavaScript", "Backend: Django", "Database: MySQL"],
         links: [
             { url: "https://github.com/Re-Brain/PlantDatabase", icon: "fa-brands fa-github" },
-            { url: "https://www.youtube.com/watch?v=vVvWTs1bCO0", icon: "fa-solid fa-video" }
+            { url: "https://www.youtube.com/watch?v=vVvWTs1bCO0", icon: "fa-solid fa-video" },
+            { url: "https://edpark-db.stou.ac.th/", icon: "fa-solid fa-link" }
         ],
         images: [
             { src: plantImg1, alt: "The main page that explain the detail of the plant" },

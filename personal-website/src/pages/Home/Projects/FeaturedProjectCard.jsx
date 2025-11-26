@@ -1,7 +1,7 @@
 import React from "react";
 import './FeaturedProjectCard.css';
 
-function FeaturedProjectCard({ title, description, image, technologies, githubLink, demoLink, demoIcon, achievements }) {
+function FeaturedProjectCard({ title, description, image, technologies, githubLink, demoLink, demoIcon, webLink, webIcon, achievements }) {
     return (
         <div className="featured-project-card">
             <div className="project-image-container">
@@ -16,6 +16,11 @@ function FeaturedProjectCard({ title, description, image, technologies, githubLi
                         {demoLink && (
                             <a href={demoLink} target="_blank" rel="noopener noreferrer" className="project-link">
                                 <i className={demoIcon || "fas fa-external-link-alt"}></i>
+                            </a>
+                        )}
+                        {webLink && (
+                            <a href={webLink} target="_blank" rel="noopener noreferrer" className="project-link">
+                                <i className={webIcon || "fas fa-external-link-alt"}></i>
                             </a>
                         )}
                     </div>

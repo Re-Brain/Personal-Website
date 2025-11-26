@@ -20,6 +20,8 @@ function FeaturedProjects() {
             githubLink: null,
             demoLink: "https://drive.google.com/drive/folders/1gPHkn5uU92UkfjOabdwjYBLMFmYgZfjt?usp=sharing",
             demoIcon: "fa-brands fa-google-drive",
+            webLink: null,
+            webIcon: null,
             achievements: t.airGuitar.achievements
         },
         {
@@ -30,6 +32,8 @@ function FeaturedProjects() {
             githubLink: "https://github.com/Re-Brain/PlantDatabase",
             demoLink: "https://www.youtube.com/watch?v=vVvWTs1bCO0",
             demoIcon: "fa-brands fa-youtube",
+            webLink: "https://edpark-db.stou.ac.th",
+            webIcon: "fa-solid fa-link",
             achievements: t.plantDatabase.achievements
         },
         {
@@ -40,6 +44,8 @@ function FeaturedProjects() {
             githubLink: null,
             demoLink: "https://drive.google.com/drive/u/0/folders/1yAZD5dt-co4C_id_0BRcQYRt1zgliCd3",
             demoIcon: "fa-brands fa-google-drive",
+            webLink: null,
+            webIcon: null,
             achievements: t.milk.achievements
         }
     ];
@@ -63,6 +69,8 @@ function FeaturedProjects() {
                         githubLink={project.githubLink}
                         demoLink={project.demoLink}
                         demoIcon={project.demoIcon}
+                        webLink={project.webLink}
+                        webIcon={project.webIcon}
                         achievements={project.achievements}
                     />
                 ))}
