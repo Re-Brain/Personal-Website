@@ -176,7 +176,7 @@ function Project()
 
     // Green Waste Management Project data
     const greenWasteData = {
-        title: language === 'th' && t.greenWaste && t.greenWaste.fullTitle ? t.greenWaste.fullTitle : "Green Waste Management Database System Project (On-Going)",
+        title: language === 'th' && t.greenWaste && t.greenWaste.fullTitle ? t.greenWaste.fullTitle : "Green Waste Management Database System Project",
         paragraphs: language === 'th' && t.greenWaste && t.greenWaste.paragraph1 
             ? [t.greenWaste.paragraph1, t.greenWaste.paragraph2, t.greenWaste.paragraph3]
             : [
