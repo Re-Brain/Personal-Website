@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import NavLink from "./NavLink";
 import { useLanguage } from "../../contexts/LanguageContext";
 import translations from "../../translations.json";
@@ -13,6 +14,7 @@ function Nav()
     return (
         <nav id="nav-container">
             <input type='checkbox' id='check' />
+            <Link to="/" className="nav-brand">Brain<span>.</span></Link>
             <ul id="navbar" >
                 <NavLink to="/" label={t.home} />
                 <NavLink to="/project" label={t.projects} />
