@@ -22,19 +22,33 @@ function Home() {
                 </div>
             </div>
 
-            <About />
+            <section className="home-section home-section-alt">
+                <About />
+            </section>
 
-            <Education />
+            <section className="home-section">
+                <Education />
+            </section>
 
-            <Languages />
+            <section className="home-section home-section-alt">
+                <Languages />
+            </section>
 
-            <Tech />
+            <section className="home-section">
+                <Tech />
+            </section>
 
-            <GitHub />
+            <section className="home-section home-section-alt">
+                <GitHub />
+            </section>
 
-            <FeaturedProjects />
+            <section className="home-section">
+                <FeaturedProjects />
+            </section>
 
-            <GetInTouch />
+            <section className="home-section home-section-alt">
+                <GetInTouch />
+            </section>
         </>
     )
 }
