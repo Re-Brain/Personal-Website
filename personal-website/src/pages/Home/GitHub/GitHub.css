@@ -86,14 +86,6 @@
     border-radius: 4px;
 }
 
-.github-simple-stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    width: 100%;
-    max-width: 800px;
-}
-
 .languages-section {
     width: 100%;
     max-width: 800px;
@@ -124,11 +116,6 @@
 
     .github-header-line {
         max-width: 100px;
-    }
-
-    .github-simple-stats {
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
 
     .github-button {

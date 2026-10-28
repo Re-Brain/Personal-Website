@@ -1,5 +1,4 @@
 import React from "react";
-import StatCard from "./StatCard";
 import LanguageItem from "./LanguageItem";
 import { useLanguage } from "../../../contexts/LanguageContext";
 import translations from "../../../translations.json";
@@ -10,19 +9,15 @@ function GitHub() {
     const t = translations[language].github;
     const username = "Re-Brain";
 
-    const stats = [
-        { number: "312+", label: "Contributions" },
-        { number: "35+", label: "Repositories" },
-        { number: "8+", label: "Languages" }
-    ];
-
+    // Snapshot from the GitHub API on 2026-10-28 (public repositories only):
+    // language shares are bytes of code across all public repos.
     const languages = [
-        { color: "#3572A5", name: "Python", percent: "26.79%" },
-        { color: "#f1e05a", name: "JavaScript", percent: "23.99%" },
-        { color: "#e34c26", name: "HTML", percent: "17.27%" },
-        { color: "#563d7c", name: "CSS", percent: "12.30%" },
-        { color: "#ffac45", name: "Swift", percent: "11.33%" },
-        { color: "#2b7489", name: "TypeScript", percent: "8.33%" }
+        { color: "#3178c6", name: "TypeScript", percent: "45.09%" },
+        { color: "#3572A5", name: "Python", percent: "23.34%" },
+        { color: "#f1e05a", name: "JavaScript", percent: "11.87%" },
+        { color: "#563d7c", name: "CSS", percent: "8.67%" },
+        { color: "#e34c26", name: "HTML", percent: "6.45%" },
+        { color: "#F05138", name: "Swift", percent: "3.92%" }
     ];
 
     return (
@@ -49,22 +44,11 @@ function GitHub() {
                 {/* GitHub Contribution Graph */}
                 <div className="github-graph-container">
                     <img 
-                        src={`https://ghchart.rshah.org/CC0000/${username}`}
+                        src={`https://ghchart.rshah.org/6366F1/${username}`}
                         alt="GitHub Contribution Graph"
                         className="github-graph"
                         loading="lazy"
                     />
-                </div>
-
-                {/* Simple Stats Display */}
-                <div className="github-simple-stats">
-                    {stats.map((stat, index) => (
-                        <StatCard 
-                            key={index}
-                            number={stat.number}
-                            label={stat.label}
-                        />
-                    ))}
                 </div>
 
                 {/* Top Languages Manual Display */}
