@@ -682,3 +682,9 @@ video {
         word-spacing: normal;
     }
 }
+
+/* Website screenshots: show the whole image instead of cropping it to the frame */
+.project-img.project-img-screenshot {
+    object-fit: contain;
+    background-color: #111;
+}

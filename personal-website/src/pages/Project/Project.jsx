@@ -7,6 +7,13 @@ import translations from "../../translations.json";
 import '../../assets/styles/project.css';
 
 // Import all project images
+import umaDescendant1 from "../../assets/images/UmaDescendant_Home.webp"
+import umaDescendant2 from "../../assets/images/UmaDescendant_Race_Card.webp"
+import umaDescendant3 from "../../assets/images/UmaDescendant_Character_Filter.webp"
+import umaDescendant4 from "../../assets/images/UmaDescendant_Subscriptions.webp"
+import umaDescendant5 from "../../assets/images/UmaDescendant_Following.webp"
+import umaDescendant6 from "../../assets/images/UmaDescendant_Email_Alert.webp"
+
 import airGuitarImg1 from "../../assets/images/Air_Guitar_Main_Menu.webp"
 import airGuitarImg2 from "../../assets/images/Air_Guitar_Chord_Introduction.webp"
 import airGuitarImg3 from "../../assets/images/Air_Guitar_Game_Menu.webp"
@@ -51,6 +58,42 @@ function Project()
 {
     const { language } = useLanguage();
     const t = translations[language].projects;
+
+    // Uma Descendant Project data
+    const umaDescendantData = {
+        title: language === 'th' && t.umaDescendant.fullTitle ? t.umaDescendant.fullTitle : "Uma Descendant: Finding Racehorses with an Umamusume Bloodline",
+        paragraphs: language === 'th' && t.umaDescendant.paragraph1 ? [
+            t.umaDescendant.paragraph1,
+            t.umaDescendant.paragraph2,
+            t.umaDescendant.paragraph3
+        ] : [
+            "Uma Descendant is an unofficial fan website for Umamusume: Pretty Derby players who also follow real horse racing. Every Umamusume character is named after a famous real racehorse, so the site answers one question: which horses racing this week descend from one of them?",
+            "<b>What it does :</b><br/><br/>Each week the system collects the entered horses for the upcoming JRA races from netkeiba, checks every horse's pedigree, and matches the ancestors against the Umamusume characters. Only horses with a connection are kept. Users can browse the race card by day, track and race, and each runner is shown with tags naming the characters in its bloodline. Clicking a horse opens its full profile on netkeiba. A character filter lets users pick one or more characters, for example Gold Ship and Special Week, and see every descendant racing that week.",
+            "<b>Accounts and alerts :</b><br/><br/>Users can sign in, follow the characters they care about, and turn on weekly email alerts. When a descendant of a followed character is racing, they receive one email that lists the horses by day, track and race number, with links to each runner. The data refreshes every week. This is an unofficial fan project and is not affiliated with Cygames, netkeiba or the JRA."
+        ],
+        techStack: [
+            "Frontend & Backend: Next.js",
+            "Authentication & User Database: Supabase (accounts and followed characters)",
+            "Race & Pedigree Database: MongoDB",
+            "Automation Scripts: Python (data collection and pedigree matching)",
+            "Scheduler: GitHub Actions (runs the weekly jobs automatically at the times I set)",
+            "Email Service: SendGrid (sending and monitoring the alert emails)",
+            "Deployment: Vercel",
+            "Domain, DNS & CDN: Cloudflare"
+        ],
+        links: [
+            { url: "https://uma-descendant.furlong-uma-project.site/", icon: "fa-solid fa-link" }
+        ],
+        images: [
+            { src: umaDescendant1, alt: "The Uma Descendant home page that explains what the site does and links to this week's races" },
+            { src: umaDescendant2, alt: "The race card where users pick a day, track and race and see each runner's Umamusume characters" },
+            { src: umaDescendant3, alt: "The character filter showing every horse racing this week that descends from Gold Ship or Special Week" },
+            { src: umaDescendant4, alt: "The subscriptions page where users search and follow Umamusume characters and turn on email alerts" },
+            { src: umaDescendant5, alt: "The subscriptions page showing the characters the user is following" },
+            { src: umaDescendant6, alt: "The weekly email alert listing the descendants of followed characters that are racing this week" }
+        ],
+        imageClassName: "project-img project-img-screenshot"
+    };
 
     // Air Guitar Project data
     const airGuitarData = {
@@ -211,6 +254,7 @@ function Project()
                     <div className="project-page-header-line"></div>
                 </div>
                 
+                <ProjectCard {...umaDescendantData} />
                 <ProjectCard {...greenWasteData} />
                 <ProjectCard {...airGuitarData} />
                 <ProjectCard {...napTrapData} />
