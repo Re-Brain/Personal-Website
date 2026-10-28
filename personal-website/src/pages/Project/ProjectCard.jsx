@@ -34,7 +34,7 @@ function ProjectCard({
                     ) : (
                         <>
                             {images.length > 1 && (
-                                <button className="carousel-btn prev" onClick={prevImage}>❮</button>
+                                <button className="carousel-btn prev" onClick={prevImage} aria-label="Previous image">❮</button>
                             )}
                             <img
                                 className={images[currentImageIndex].className || imageClassName}
@@ -43,7 +43,7 @@ function ProjectCard({
                                 loading="lazy"
                             />
                             {images.length > 1 && (
-                                <button className="carousel-btn next" onClick={nextImage}>❯</button>
+                                <button className="carousel-btn next" onClick={nextImage} aria-label="Next image">❯</button>
                             )}
                         </>
                     )}

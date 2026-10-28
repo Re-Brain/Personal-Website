@@ -34,7 +34,7 @@
 }
 
 .project-page-header-title {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 3rem;
     font-weight: 700;
     color: var(--text-primary);
@@ -64,13 +64,16 @@
 
 .carousel-btn {
     position: absolute;
-    background: var(--accent-color);
+    background: rgba(11, 17, 32, 0.65);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     color: white;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 1rem;
     cursor: pointer;
     font-size: 1.5rem;
-    transition: all 0.3s ease;
+    /* `scale` is separate from `transform`, so hovering never moves the button's position */
+    transition: background-color 0.2s ease, border-color 0.2s ease, scale 0.2s ease, box-shadow 0.2s ease;
     z-index: 2;
     border-radius: 50%;
     width: 50px;
@@ -78,30 +81,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .carousel-btn:hover {
-    transform: scale(1.15);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    scale: 1.1;
+    box-shadow: 0 6px 16px rgba(var(--accent-rgb), 0.45);
 }
 
-[data-theme="dark"] .carousel-btn {
-    background: #FF3333;
+.carousel-btn:active {
+    scale: 0.95;
 }
 
-[data-theme="light"] .carousel-btn {
-    background: #CC0000;
+.carousel-btn:focus-visible {
+    outline: 2px solid var(--accent-text);
+    outline-offset: 2px;
 }
 
 .prev {
-    left: 0; /* Move outside the image */
-    transform: translateX(-50%);
+    left: -25px; /* Half the button sits outside the image */
 }
 
 .next {
-    right: 0; /* Move outside the image */
-    transform: translateX(50%);
+    right: -25px;
 }
 
 .project-img, .project-img-aora
@@ -153,14 +157,11 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.project-container:hover .project-detail {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    transform: translateY(-2px);
-}
+
 
 .project-header
 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 1.875rem;
     color: var(--accent-color);
     font-weight: 600;
@@ -202,11 +203,11 @@
 }
 
 [data-theme="dark"] .project-tech > a > i:hover {
-    color: #FF3333;
+    color: var(--accent-text);
 }
 
 [data-theme="light"] .project-tech > a > i:hover {
-    color: #CC0000;
+    color: var(--accent-text);
 }
 
 video
@@ -250,7 +251,7 @@ video
 }
 
 .cs50-header-title {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 2rem;
     font-weight: 600;
     color: var(--text-primary);
@@ -296,7 +297,7 @@ video
 
 .CS50Project-header
 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     color: var(--accent-color);
     font-size: 1.5rem;
     font-weight: 600;
@@ -334,11 +335,11 @@ video
 }
 
 [data-theme="dark"] .CS50Project-link:hover {
-    color: #FF3333;
+    color: var(--accent-text);
 }
 
 [data-theme="light"] .CS50Project-link:hover {
-    color: #CC0000;
+    color: var(--accent-text);
 }
 
 /* Media Queries */
@@ -497,5 +498,187 @@ video
 
     .project-tech > a > i {
         font-size: 1.25rem;
+    }
+}
+
+
+/* ---- Responsive fixes ---- */
+
+/* The wrapper div was sized by its widest child (900px images, no-wrap card rows) and overflowed */
+#project-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#project-container > div {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 0;
+}
+
+.project-container {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.project-display {
+    max-width: 100%;
+}
+
+.project-img,
+.project-img-aora,
+.project-img-gloves,
+.project-img-mobile,
+video {
+    max-width: 100%;
+}
+
+.project-img-gloves {
+    height: auto;
+}
+
+.project-detail {
+    max-width: 100%;
+}
+
+.project-content {
+    font-size: clamp(1rem, 1.9vw, 1.5rem);
+}
+
+#CS50-container {
+    width: 100%;
+}
+
+#CS50-upper-items,
+#CS50-lower-items {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+.CS50Project-container {
+    height: auto;
+    min-height: 220px;
+    margin: 0;
+    max-width: 100%;
+}
+
+.CS50Project-content {
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+}
+
+@media (max-width: 1100px) {
+    .project-detail {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        margin: 2rem 0;
+    }
+
+    .project-page-header-container {
+        margin-bottom: 40px;
+        gap: 16px;
+        padding: 0;
+    }
+
+    .project-display {
+        padding: 0;
+    }
+
+    /* Overlay the carousel buttons on the image edges instead of pushing them off-screen */
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .prev {
+        left: 0.5rem;
+        transform: none;
+    }
+
+    .next {
+        right: 0.5rem;
+        transform: none;
+    }
+
+    .project-img,
+    .project-img-aora,
+    video {
+        min-height: 0;
+        height: auto;
+        aspect-ratio: 16 / 10;
+    }
+
+    .project-img-aora {
+        aspect-ratio: 9 / 16;
+        width: clamp(200px, 60vw, 260px);
+    }
+
+    .project-detail {
+        width: 100%;
+        padding: 1.25rem;
+    }
+
+    #CS50-container {
+        margin-top: 40px;
+        padding-top: 20px;
+    }
+
+    .cs50-header-container {
+        margin-bottom: 30px;
+    }
+
+    .CS50Project-container {
+        width: 100%;
+        max-width: 420px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #project-container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .project-detail {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .project-img,
+    video {
+        min-height: 0;
+    }
+
+    .project-img-aora {
+        min-height: 0;
+    }
+}
+
+.project-content,
+.project-tech,
+.CS50Project-content {
+    line-height: 1.65;
+}
+
+.project-header,
+.CS50Project-header {
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .project-content {
+        hyphens: manual;
+        -webkit-hyphens: manual;
+        word-spacing: normal;
     }
 }
