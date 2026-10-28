@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import TechStack from "./TechStack";
+import { useLanguage } from "../../contexts/LanguageContext";
+import translations from "../../translations.json";
 
 function ProjectCard({ 
     title, 
@@ -10,6 +13,8 @@ function ProjectCard({
     imageClassName = "project-img" 
 }) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const { language } = useLanguage();
+    const techStackTitle = translations[language].projects.techStack;
 
     const nextImage = () => {
         setCurrentImageIndex((prevIndex) =>
@@ -60,9 +65,7 @@ function ProjectCard({
 
                 <br />
 
-                {techStack.map((tech, index) => (
-                    <p key={index} className="project-tech">{tech}</p>
-                ))}
+                <TechStack items={techStack} title={techStackTitle} />
 
                 <br />
 

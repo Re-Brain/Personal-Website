@@ -688,3 +688,110 @@ video {
     object-fit: contain;
     background-color: #111;
 }
+
+
+/* ---- Tech stack cards ---- */
+.tech-stack {
+    margin-top: 2rem;
+}
+
+.tech-stack-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.tech-stack-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, var(--border-color), transparent);
+}
+
+.tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.tech-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.875rem;
+    padding: 1.125rem 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.1), rgba(var(--accent-rgb), 0.02));
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tech-row:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-color);
+    box-shadow: 0 8px 20px rgba(var(--accent-rgb), 0.2);
+}
+
+.tech-row-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(var(--accent-rgb), 0.35);
+}
+
+.tech-row-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 0;
+}
+
+.tech-row-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-gray);
+    line-height: 1.3;
+}
+
+.tech-row-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tech-row-chip {
+    padding: 0.2rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid rgba(var(--accent-rgb), 0.45);
+    background: rgba(var(--accent-rgb), 0.16);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.tech-row-note {
+    font-size: 0.82rem;
+    color: var(--text-gray);
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .tech-stack-grid {
+        grid-template-columns: 1fr;
+    }
+}
