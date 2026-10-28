@@ -1,6 +1,6 @@
 .about-container {
     max-width: 1000px;
-    margin: 4rem auto;
+    margin: 0 auto;
     padding: 0 2rem;
 }
 
@@ -15,7 +15,7 @@
 .about-header-line {
     flex: 1;
     height: 2px;
-    background-color: #888888;
+    background-color: var(--text-gray);
     transition: background-color 0.3s ease;
 }
 
@@ -31,12 +31,12 @@
 
 /* Dark theme (default) */
 :root .about-header-title {
-    color: #CC0000;
+    color: var(--accent-text);
 }
 
 /* Light theme */
 [data-theme="light"] .about-header-title {
-    color: #1A1A1A;
+    color: var(--accent-text);
 }
 
 .about-content {

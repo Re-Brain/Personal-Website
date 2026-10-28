@@ -21,14 +21,14 @@
 }
 
 .language-name {
-    font-family: 'Lora', serif;
+    font-family: var(--font-body);
     font-size: 1rem;
     color: var(--text-primary);
     flex-grow: 1;
 }
 
 .language-percent {
-    font-family: 'Lora', serif;
+    font-family: var(--font-body);
     font-size: 0.95rem;
     color: var(--text-secondary);
     font-weight: 600;

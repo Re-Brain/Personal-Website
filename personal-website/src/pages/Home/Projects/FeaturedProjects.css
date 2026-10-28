@@ -1,5 +1,5 @@
 .featured-projects-container {
-    padding: 60px 20px;
+    padding: 0 20px;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -20,7 +20,7 @@
 }
 
 .featured-projects-header-title {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--text-primary);
@@ -50,7 +50,7 @@
     color: #FFFFFF;
     text-decoration: none;
     border-radius: 8px;
-    font-family: 'Lora', serif;
+    font-family: var(--font-body);
     font-size: 1.1rem;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -58,9 +58,9 @@
 }
 
 .view-all-btn:hover {
-    background-color: #FF0000;
+    background-color: var(--accent-hover);
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(204,0,0,0.3);
+    box-shadow: 0 6px 20px rgba(var(--accent-rgb),0.3);
     color: #FFFFFF;
 }
 
@@ -74,7 +74,7 @@
 
 @media (max-width: 768px) {
     .featured-projects-container {
-        padding: 30px 15px;
+        padding: 0 15px;
     }
 
     .featured-projects-header-container {

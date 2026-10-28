@@ -1,5 +1,5 @@
 .github-container {
-    padding: 60px 20px;
+    padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -20,7 +20,7 @@
 }
 
 .github-header-title {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--text-primary);
@@ -51,7 +51,7 @@
     color: #FFFFFF;
     text-decoration: none;
     border-radius: 8px;
-    font-family: 'Lora', serif;
+    font-family: var(--font-body);
     font-size: 1.1rem;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -59,7 +59,7 @@
 }
 
 .github-button:hover {
-    background-color: #FF0000;
+    background-color: var(--accent-hover);
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
     color: #FFFFFF;
@@ -74,9 +74,10 @@
     display: flex;
     justify-content: center;
     padding: 25px;
-    border-radius: 12px;
     background: var(--card-bg);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
 }
 
 .github-graph {
@@ -98,12 +99,13 @@
     max-width: 800px;
     background: var(--card-bg);
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
 }
 
 .languages-title {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--text-primary);
@@ -113,7 +115,7 @@
 
 @media (max-width: 768px) {
     .github-container {
-        padding: 30px 15px;
+        padding: 0 15px;
     }
 
     .github-header-title {

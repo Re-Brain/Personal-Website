@@ -1,56 +1,80 @@
 /* Setting */
 
 :root {
-    /* Dark theme (default) */
-    --bg-primary: #1A1A1A;
-    --bg-secondary: #2A2A2A;
-    --text-primary: #FFFFFF;
-    --text-secondary: #CCCCCC;
-    --text-dark: #FFFFFF;
-    --text-gray: #AAAAAA;
-    --accent-color: #CC0000;
-    --button-bg: #CC0000;
-    --toggle-bg: #CC0000;
-    --profile-border: #CC0000;
-    --nav-bg: #CC0000;
-    --nav-text: #FFFFFF;
-    --card-bg: #252525;
-    --border-color: #404040;
+    --font-heading: 'Space Grotesk', 'Noto Sans Thai', system-ui, sans-serif;
+    --font-body: 'Inter', 'Noto Sans Thai', system-ui, sans-serif;
+
+    /* Dark theme (default): slate + indigo */
+    --bg-primary: #0B1120;
+    --bg-secondary: #111A2E;
+    --text-primary: #F1F5F9;
+    --text-secondary: #CBD5E1;
+    --text-dark: #F1F5F9;
+    --text-gray: #94A3B8;
+    --accent-color: #6366F1;
+    --accent-hover: #4F46E5;
+    --accent-text: #A5B4FC;
+    --accent-rgb: 99, 102, 241;
+    --button-bg: #6366F1;
+    --toggle-bg: #6366F1;
+    --profile-border: #6366F1;
+    --nav-bg: #111A2E;
+    --nav-text: #F1F5F9;
+    --nav-accent: #A5B4FC;
+    --card-bg: #151F36;
+    --border-color: #26334D;
+    --radius-card: 16px;
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.25);
+    --shadow-card-hover: 0 12px 32px rgba(var(--accent-rgb), 0.28);
 }
 
 [data-theme="light"] {
-    /* Light theme */
-    --bg-primary: #FFFFFF;
-    --bg-secondary: #F5F5F5;
-    --text-primary: #1A1A1A;
-    --text-secondary: #333333;
-    --text-dark: #1A1A1A;
-    --text-gray: #666666;
-    --accent-color: #CC0000;
-    --button-bg: #1A1A1A;
-    --toggle-bg: #1A1A1A;
-    --profile-border: #1A1A1A;
-    --nav-bg: #2A2A2A;
-    --nav-text: #FFFFFF;
-    --card-bg: #FAFAFA;
-    --border-color: #E0E0E0;
+    /* Light theme: soft slate + indigo */
+    --bg-primary: #F8FAFC;
+    --bg-secondary: #EEF2F7;
+    --text-primary: #0F172A;
+    --text-secondary: #334155;
+    --text-dark: #0F172A;
+    --text-gray: #64748B;
+    --accent-color: #4F46E5;
+    --accent-hover: #4338CA;
+    --accent-text: #4338CA;
+    --accent-rgb: 79, 70, 229;
+    --button-bg: #4F46E5;
+    --toggle-bg: #4F46E5;
+    --profile-border: #4F46E5;
+    --nav-bg: #1E1B4B;
+    --nav-text: #F8FAFC;
+    --nav-accent: #C7D2FE;
+    --card-bg: #FFFFFF;
+    --border-color: #E2E8F0;
+    --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.06);
+    --shadow-card-hover: 0 12px 32px rgba(var(--accent-rgb), 0.18);
+}
+
+/* Text shadows are tuned for the dark theme and smudge text on light backgrounds */
+[data-theme="light"] *
+{
+    text-shadow: none !important;
+    -webkit-text-stroke: 0 !important;
 }
 
 body
 {
-    font-family: 'Lora', Georgia, serif !important;
+    font-family: var(--font-body) !important;
     background-color: var(--bg-primary) !important;
     color: var(--text-primary) !important; 
     overflow: auto !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Elegant headings with Playfair Display */
+/* Headings */
 h1, h2, h3, h4, h5, h6,
 .heading,
 .title {
-    font-family: 'Playfair Display', Georgia, serif !important;
+    font-family: var(--font-heading) !important;
     font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 p

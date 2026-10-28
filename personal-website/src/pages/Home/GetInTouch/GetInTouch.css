@@ -1,7 +1,7 @@
 .get-in-touch-container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 5rem 2rem;
+    padding: 0 2rem;
     text-align: center;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .get-in-touch-header-title {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--text-primary);
@@ -50,7 +50,7 @@
     border-radius: 12px;
     text-decoration: none;
     color: var(--text-color);
-    font-family: 'Lora', serif;
+    font-family: var(--font-body);
     font-size: 1rem;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -64,14 +64,14 @@
 }
 
 .contact-link-btn:hover {
-    border-color: #CC0000;
+    border-color: var(--accent-color);
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(204, 0, 0, 0.15);
+    box-shadow: 0 8px 16px rgba(var(--accent-rgb), 0.15);
     color: var(--text-color);
 }
 
 .contact-link-btn:hover i {
-    color: #CC0000;
+    color: var(--accent-text);
 }
 
 /* Responsive */

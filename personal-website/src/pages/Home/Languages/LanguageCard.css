@@ -1,16 +1,16 @@
 .language-card {
-    background: var(--card-bg);
-    border-radius: 12px;
     padding: 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    background: var(--card-bg);
 }
 
 .language-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent-color);
-    box-shadow: 0 6px 20px rgba(204,0,0,0.2);
+    box-shadow: var(--shadow-card-hover);
 }
 
 .language-card-header {
@@ -20,7 +20,7 @@
 }
 
 .language-name {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--text-primary);
@@ -28,7 +28,7 @@
 }
 
 .language-proficiency {
-    font-family: 'Lora', serif;
+    font-family: var(--font-body);
     font-size: 0.95rem;
     color: var(--text-secondary);
     font-style: italic;
@@ -39,7 +39,7 @@
 }
 
 .test-name {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--accent-color);
@@ -54,13 +54,13 @@
 }
 
 .score-label {
-    font-family: 'Lora', serif;
+    font-family: var(--font-body);
     font-size: 1rem;
     color: var(--text-secondary);
 }
 
 .score-value {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--accent-color);
@@ -75,14 +75,14 @@
 .cefr-badge {
     display: inline-block;
     padding: 8px 20px;
-    background: linear-gradient(135deg, var(--accent-color), #FF0000);
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
     color: #FFFFFF;
     border-radius: 20px;
-    font-family: 'Lora', serif;
+    font-family: var(--font-body);
     font-size: 0.95rem;
     font-weight: 700;
     letter-spacing: 1px;
-    box-shadow: 0 3px 10px rgba(204,0,0,0.3);
+    box-shadow: 0 3px 10px rgba(var(--accent-rgb),0.3);
 }
 
 .language-details {
@@ -108,7 +108,7 @@
 }
 
 .skill-name {
-    font-family: 'Lora', serif;
+    font-family: var(--font-body);
     font-size: 1rem;
     color: var(--text-primary);
     font-weight: 600;
@@ -121,7 +121,7 @@
 }
 
 .skill-score {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--accent-color);
@@ -134,7 +134,7 @@
     background-color: var(--accent-color);
     color: #FFFFFF;
     border-radius: 12px;
-    font-family: 'Lora', serif;
+    font-family: var(--font-body);
     font-size: 0.85rem;
     font-weight: 600;
 }
@@ -145,10 +145,10 @@
     justify-content: center;
     gap: 10px;
     padding: 20px;
-    background: linear-gradient(135deg, var(--accent-color), #FF0000);
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
     color: #FFFFFF;
     border-radius: 10px;
-    font-family: 'Lora', serif;
+    font-family: var(--font-body);
     font-size: 1.1rem;
     font-weight: 600;
     margin-top: 15px;

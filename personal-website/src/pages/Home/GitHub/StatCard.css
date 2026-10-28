@@ -1,21 +1,21 @@
 .stat-card {
     background: var(--card-bg);
     padding: 30px 20px;
-    border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
 }
 
 .stat-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent-color);
-    box-shadow: 0 6px 16px rgba(204,0,0,0.2);
+    box-shadow: var(--shadow-card-hover);
 }
 
 .stat-number {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--accent-color);
@@ -23,7 +23,7 @@
 }
 
 .stat-label {
-    font-family: 'Lora', serif;
+    font-family: var(--font-body);
     font-size: 1rem;
     color: var(--text-secondary);
     text-transform: uppercase;

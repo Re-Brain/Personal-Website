@@ -36,21 +36,21 @@
 
 #footer-item > a > i:hover,
 .footer-item > a > i:hover {
-    color: #CC0000;
+    color: var(--nav-accent);
     transform: scale(1.2);
 }
 
 /* Light theme hover effect */
 [data-theme="light"] #footer-item > a > i:hover,
 [data-theme="light"] .footer-item > a > i:hover {
-    color: #333333;
+    color: var(--nav-accent);
     transform: scale(1.2);
 }
 
 /* Dark theme hover effect */
 [data-theme="dark"] #footer-item > a > i:hover,
 [data-theme="dark"] .footer-item > a > i:hover {
-    color: #FF3333;
+    color: var(--nav-accent);
     transform: scale(1.2);
 }
 
