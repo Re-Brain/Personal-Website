@@ -38,6 +38,14 @@
     color: var(--nav-accent);
 }
 
+@media (max-width: 500px)
+{
+    .nav-brand
+    {
+        font-size: 1.25rem;
+    }
+}
+
 #navbar
 {
     display: flex;
