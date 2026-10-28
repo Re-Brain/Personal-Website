@@ -4,9 +4,9 @@ import { useLanguage } from "../../../contexts/LanguageContext";
 import translations from "../../../translations.json";
 import './FeaturedProjects.css';
 
-import airGuitarImg from "../../../assets/images/Air_Guitar_Main_Menu.png";
-import plantDatabaseImg from "../../../assets/images/PlantDBS.png";
-import milkImg from "../../../assets/images/MILK.png";
+import airGuitarImg from "../../../assets/images/Air_Guitar_Main_Menu.webp";
+import plantDatabaseImg from "../../../assets/images/PlantDBS.webp";
+import milkImg from "../../../assets/images/MILK.webp";
 
 function FeaturedProjects() {
     const { language } = useLanguage();
