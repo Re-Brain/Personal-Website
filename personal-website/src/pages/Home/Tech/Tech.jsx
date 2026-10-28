@@ -11,17 +11,17 @@ function Tech() {
         {
             category: "Frontend",
             icon: "desktop",
-            skills: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "TailwindCSS"]
+            skills: ["HTML", "CSS", "JavaScript", "React.js", "Next.js", "Bootstrap", "TailwindCSS"]
         },
         {
             category: "Backend",
             icon: "server",
-            skills: ["Django", "Express.js", "Node.js", "Flask", "Laravel", "REST API", "GraphQL"]
+            skills: ["Django", "Express.js", "Node.js", "Next.js", "Flask", "Laravel", "REST API", "GraphQL"]
         },
         {
             category: "Database Management",
             icon: "database",
-            skills: ["MySQL", "SQLite", "MongoDB", "Mongoose"]
+            skills: ["MySQL", "SQLite", "MongoDB", "Mongoose", "Supabase"]
         },
         {
             category: "Machine Learning",
@@ -49,6 +49,11 @@ function Tech() {
             skills: ["Vercel", "Heroku"]
         },
         {
+            category: "Domain & CDN",
+            icon: "globe",
+            skills: ["Cloudflare"]
+        },
+        {
             category: "Design Tool",
             icon: "pencil-ruler",
             skills: ["Figma", "Draw.io", "DBdiagram.io"]
@@ -56,7 +61,12 @@ function Tech() {
         {
             category: "Automation",
             icon: "cogs",
-            skills: ["n8n (Learning)"]
+            skills: ["GitHub Actions", "Python Scripts", "n8n (Learning)"]
+        },
+        {
+            category: "Email Service",
+            icon: "envelope",
+            skills: ["SendGrid"]
         },
         {
             category: "Soft Skills",
