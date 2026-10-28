@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-weight: 600;
     font-size: 0.9rem;
 }
@@ -67,10 +67,10 @@
 
 @media (max-width: 480px) {
     .language-toggle-btn {
-        width: 50px;
-        height: 50px;
-        bottom: 85px;
-        right: 20px;
+        width: 42px;
+        height: 42px;
+        bottom: 62px;
+        right: 12px;
     }
     
     .language-text {

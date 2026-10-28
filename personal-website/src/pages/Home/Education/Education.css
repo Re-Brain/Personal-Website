@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin: 4rem auto;
+    margin: 0 auto 3.5rem;
     max-width: 800px;
     padding: 0 2rem;
 }
@@ -11,7 +11,7 @@
 .education-header-line {
     flex: 1;
     height: 2px;
-    background-color: #888888;
+    background-color: var(--text-gray);
     transition: background-color 0.3s ease;
 }
 
@@ -27,22 +27,22 @@
 
 /* Dark theme (default) */
 :root .education-header-title {
-    color: #CC0000;
+    color: var(--accent-text);
 }
 
 /* Light theme */
 [data-theme="light"] .education-header-title {
-    color: #1A1A1A;
+    color: var(--accent-text);
 }
 
 @media (max-width: 768px) {
     .education-header-container {
-        margin: 2rem auto;
+        margin: 0 auto 2rem;
     }
 
     .education-timeline {
-        margin: 2rem auto;
-        padding: 1rem;
+        margin: 0 auto;
+        padding: 0 1rem;
     }
 
     .education-header-title {
@@ -56,6 +56,6 @@
 
 .education-timeline {
     max-width: 900px;
-    margin: 3rem auto;
-    padding: 2rem;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
