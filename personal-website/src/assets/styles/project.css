@@ -731,6 +731,11 @@ video {
     transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* A lone last card in the two-column grid spans the full row */
+.tech-row:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}
+
 .tech-row:hover {
     transform: translateY(-3px);
     border-color: var(--accent-color);

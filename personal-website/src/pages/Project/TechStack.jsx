@@ -16,7 +16,10 @@ const ICONS = [
     ["mobile", "mobile-alt"],
     ["game", "gamepad"],
     ["programming", "code"],
-    ["tool", "tools"]
+    ["tool", "tools"],
+    ["data", "database"],
+    ["devops", "cloud"],
+    ["service", "plug"]
 ];
 
 function iconFor(label) {
@@ -73,7 +76,10 @@ function TechStack({ items, title }) {
             <div className="tech-stack-grid">
                 {items.map((item, index) => {
                     const { label, chips } = parseItem(item);
-                    const notes = chips.filter((chip) => chip.note).map((chip) => chip.note);
+                    // With several pills, say which one a note belongs to: "FastAPI: Python"
+                    const notes = chips
+                        .filter((chip) => chip.note)
+                        .map((chip) => (chips.length > 1 ? `${chip.name}: ${chip.note}` : chip.note));
                     return (
                         <div className="tech-row" key={index}>
                             <span className="tech-row-icon">

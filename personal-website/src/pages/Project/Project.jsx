@@ -7,6 +7,16 @@ import translations from "../../translations.json";
 import '../../assets/styles/project.css';
 
 // Import all project images
+import furlong1 from "../../assets/images/Furlong_Home.webp"
+import furlong2 from "../../assets/images/Furlong_How_It_Works.webp"
+import furlong3 from "../../assets/images/Furlong_Farms.webp"
+import furlong4 from "../../assets/images/Furlong_Horses.webp"
+import furlong5 from "../../assets/images/Furlong_Horse_Page.webp"
+import furlong6 from "../../assets/images/Furlong_Farm_Page.webp"
+import furlong7 from "../../assets/images/Furlong_Visitor_Bookings.webp"
+import furlong8 from "../../assets/images/Furlong_Farm_Dashboard.webp"
+import furlong9 from "../../assets/images/Furlong_Horse_Management.webp"
+
 import umaDescendant1 from "../../assets/images/UmaDescendant_Home.webp"
 import umaDescendant2 from "../../assets/images/UmaDescendant_Race_Card.webp"
 import umaDescendant3 from "../../assets/images/UmaDescendant_Character_Filter.webp"
@@ -58,6 +68,42 @@ function Project()
 {
     const { language } = useLanguage();
     const t = translations[language].projects;
+
+    // Furlong Project data
+    const furlongData = {
+        title: language === 'th' && t.furlong.fullTitle ? t.furlong.fullTitle : "Furlong: A Platform to Visit and Support Retired Racehorses",
+        paragraphs: language === 'th' && t.furlong.paragraph1 ? [
+            t.furlong.paragraph1,
+            t.furlong.paragraph2,
+            t.furlong.paragraph3
+        ] : [
+            "Furlong is a platform that follows racehorses after their careers end. Every year, many racehorses retire into the care of farms, whether they are out to pasture or still working at stud. Furlong lets people browse these farms and the champions who live there, book a visit to meet a retired racehorse in person, or donate to support a horse's day-to-day care from afar.",
+            "<b>For visitors :</b><br/><br/>Visitors can browse the farms that are open to visitors and the horses living on them. Each horse has a profile with its color, date of birth, sex and pedigree (sire × dam), and each farm has a page with its location and photo gallery. After logging in with a visitor account, they can pick a time slot and the number of visitors to book a visit, cancel it from their bookings dashboard, manage their subscription, and donate to support a horse or a farm.",
+            "<b>For farms :</b><br/><br/>Farms get their own dashboard to manage their profile and up to three photos, add and edit the horses they care for, set the days and times they are open for visits, manage visitor bookings, and see the donations they receive. Both farms and horses go through an approval step."
+        ],
+        techStack: [
+            "Frontend: React, TypeScript, Tailwind CSS",
+            "Backend: FastAPI (Python), SQLAlchemy",
+            "Data: PostgreSQL, Redis",
+            "DevOps: Docker, Nginx, AWS EC2, Cloudflare",
+            "Services: Stripe, Resend, Cloudinary"
+        ],
+        links: [
+            { url: "https://furlong.furlong-uma-project.site/", icon: "fa-solid fa-link" }
+        ],
+        images: [
+            { src: furlong1, alt: "The Furlong home page with the tagline Life Beyond the Track" },
+            { src: furlong2, alt: "The Furlong page that explains why it exists and how browsing, booking a visit and supporting a horse work" },
+            { src: furlong3, alt: "The list of farms that are open to visitors" },
+            { src: furlong4, alt: "The list of retired champion racehorses living on the farms" },
+            { src: furlong5, alt: "A horse profile page showing its color, birth date and pedigree, with buttons to book a visit and support the horse" },
+            { src: furlong6, alt: "A farm page showing its address and photo gallery, with a donate button" },
+            { src: furlong7, alt: "The visitor dashboard where a visitor sees and cancels their confirmed bookings" },
+            { src: furlong8, alt: "The farm dashboard where a farm edits its details and photos" },
+            { src: furlong9, alt: "The farm dashboard's horse management table with approval status and add, edit and delete actions" }
+        ],
+        imageClassName: "project-img project-img-screenshot"
+    };
 
     // Uma Descendant Project data
     const umaDescendantData = {
@@ -255,6 +301,7 @@ function Project()
                 </div>
                 
                 <ProjectCard {...umaDescendantData} />
+                <ProjectCard {...furlongData} />
                 <ProjectCard {...greenWasteData} />
                 <ProjectCard {...airGuitarData} />
                 <ProjectCard {...napTrapData} />
