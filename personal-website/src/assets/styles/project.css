@@ -683,10 +683,13 @@ video {
     }
 }
 
-/* Website screenshots: show the whole image instead of cropping it to the frame */
+/* Website screenshots: size the frame to the image itself, so nothing is cropped and there are no empty bars */
 .project-img.project-img-screenshot {
-    object-fit: contain;
-    background-color: #111;
+    height: auto;
+    min-height: 0;
+    /* All screenshots are about 1.88:1. Reserving that shape keeps the page from jumping as they load. */
+    aspect-ratio: 1.88;
+    object-fit: cover;
 }
 
 
