@@ -21,6 +21,7 @@
     --nav-bg: #111A2E;
     --nav-text: #F1F5F9;
     --nav-accent: #A5B4FC;
+    --footer-bg: #060A14;
     --card-bg: #151F36;
     --border-color: #26334D;
     --radius-card: 16px;
@@ -46,6 +47,7 @@
     --nav-bg: #1E1B4B;
     --nav-text: #F8FAFC;
     --nav-accent: #C7D2FE;
+    --footer-bg: #1E1B4B;
     --card-bg: #FFFFFF;
     --border-color: #E2E8F0;
     --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.06);
@@ -101,7 +103,8 @@ li
 {
     display: flex;
     flex-direction: column;
-    max-width: 1459px;
+    /* No width cap here: each page section limits its own content width, which lets the
+       alternating section backgrounds run edge to edge */
     width: 100%;
     height: 100%;
     margin: 0 auto;
