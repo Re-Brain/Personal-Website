@@ -81,6 +81,16 @@
     "featuredProjects": {
       "title": "Featured Projects",
       "viewAll": "View All Projects",
+      "umaDescendant": {
+        "title": "Uma Descendant",
+        "description": "A fan website that shows which racehorses running this week descend from the real horses behind Umamusume characters, with character following and weekly email alerts.",
+        "achievements": ["Weekly JRA race cards matched to Umamusume bloodlines", "Character filter and follow list", "Weekly email alerts for followed characters"]
+      },
+      "furlong": {
+        "title": "Furlong",
+        "description": "A platform to browse farms that care for retired racehorses, book a visit to meet them in person, or donate to support their care.",
+        "achievements": ["Visit booking with time slots", "Farm dashboard for horses and visitors", "Donations to support horse care"]
+      },
       "airGuitar": {
         "title": "Air Guitar Gloves Project",
         "description": "Hardware-based guitar simulation with interactive gloves and mobile game integration using Unity. Features tutorial mode, game mode, and performance mode for learning guitar.",
@@ -243,6 +253,16 @@
     "featuredProjects": {
       "title": "โปรเจกต์ที่โดดเด่น",
       "viewAll": "ดูโปรเจกต์ทั้งหมด",
+      "umaDescendant": {
+        "title": "Uma Descendant",
+        "description": "เว็บไซต์แฟนเมดที่แสดงว่าม้าแข่งตัวไหนที่ลงแข่งสัปดาห์นี้สืบเชื้อสายมาจากม้าจริงที่เป็นต้นแบบของตัวละคร Umamusume พร้อมระบบติดตามตัวละครและแจ้งเตือนทางอีเมลรายสัปดาห์",
+        "achievements": ["จับคู่ม้าแข่ง JRA ประจำสัปดาห์กับสายเลือด Umamusume", "ตัวกรองและระบบติดตามตัวละคร", "แจ้งเตือนทางอีเมลรายสัปดาห์สำหรับตัวละครที่ติดตาม"]
+      },
+      "furlong": {
+        "title": "Furlong",
+        "description": "แพลตฟอร์มสำหรับค้นหาฟาร์มที่ดูแลม้าแข่งเกษียณ จองเยี่ยมชมเพื่อพบม้าตัวจริง และบริจาคเพื่อสนับสนุนการดูแล",
+        "achievements": ["จองเยี่ยมชมพร้อมเลือกช่วงเวลา", "แดชบอร์ดฟาร์มสำหรับจัดการม้าและผู้เยี่ยมชม", "บริจาคเพื่อสนับสนุนการดูแลม้า"]
+      },
       "airGuitar": {
         "title": "โปรเจกต์ถุงมือกีตาร์อากาศ (Air Guitar Gloves)",
         "description": "เกมแอปพลิเคชั่นที่ถูกพัฒนาโดย Unity พร้อมถุงมือจำลองการเล่นกีตาร์ ในแอปพลิเคชั่นมีโหมดการสอนสำหรับการเรียนรู้การเล่นกีตาร์ โหมดฝึกซ้อม และ โหมดการแสดง",

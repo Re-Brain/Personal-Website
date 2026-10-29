@@ -4,25 +4,38 @@ import { useLanguage } from "../../../contexts/LanguageContext";
 import translations from "../../../translations.json";
 import './FeaturedProjects.css';
 
-import airGuitarImg from "../../../assets/images/Air_Guitar_Main_Menu.webp";
+import umaDescendantImg from "../../../assets/images/UmaDescendant_Home.webp";
+import furlongImg from "../../../assets/images/Furlong_Home.webp";
 import plantDatabaseImg from "../../../assets/images/PlantDBS.webp";
-import milkImg from "../../../assets/images/MILK.webp";
 
 function FeaturedProjects() {
     const { language } = useLanguage();
     const t = translations[language].featuredProjects;
     const projects = [
         {
-            title: t.airGuitar.title,
-            description: t.airGuitar.description,
-            image: airGuitarImg,
-            technologies: ["Unity", "C#", "Arduino", "Hardware Integration"],
+            title: t.umaDescendant.title,
+            description: t.umaDescendant.description,
+            image: umaDescendantImg,
+            technologies: ["Next.js", "Python", "Supabase", "MongoDB", "GitHub Actions"],
             githubLink: null,
-            demoLink: "https://drive.google.com/drive/folders/1gPHkn5uU92UkfjOabdwjYBLMFmYgZfjt?usp=sharing",
-            demoIcon: "fa-brands fa-google-drive",
-            webLink: null,
-            webIcon: null,
-            achievements: t.airGuitar.achievements
+            demoLink: null,
+            demoIcon: null,
+            webLink: "https://uma-descendant.furlong-uma-project.site/",
+            webIcon: "fa-solid fa-link",
+            achievements: t.umaDescendant.achievements
+        },
+        {
+            title: t.furlong.title,
+            description: t.furlong.description,
+            image: furlongImg,
+            imagePosition: "left center",
+            technologies: ["React", "TypeScript", "FastAPI", "PostgreSQL", "Stripe"],
+            githubLink: null,
+            demoLink: null,
+            demoIcon: null,
+            webLink: "https://furlong.furlong-uma-project.site/",
+            webIcon: "fa-solid fa-link",
+            achievements: t.furlong.achievements
         },
         {
             title: t.plantDatabase.title,
@@ -35,18 +48,6 @@ function FeaturedProjects() {
             webLink: "https://edpark-db.stou.ac.th",
             webIcon: "fa-solid fa-link",
             achievements: t.plantDatabase.achievements
-        },
-        {
-            title: t.milk.title,
-            description: t.milk.description,
-            image: milkImg,
-            technologies: ["TensorFlow", "YOLOv8", "Python", "Jupyter Notebook", "Computer Vision"],
-            githubLink: null,
-            demoLink: "https://drive.google.com/drive/u/0/folders/1yAZD5dt-co4C_id_0BRcQYRt1zgliCd3",
-            demoIcon: "fa-brands fa-google-drive",
-            webLink: null,
-            webIcon: null,
-            achievements: t.milk.achievements
         }
     ];
 
@@ -65,6 +66,7 @@ function FeaturedProjects() {
                         title={project.title}
                         description={project.description}
                         image={project.image}
+                        imagePosition={project.imagePosition}
                         technologies={project.technologies}
                         githubLink={project.githubLink}
                         demoLink={project.demoLink}

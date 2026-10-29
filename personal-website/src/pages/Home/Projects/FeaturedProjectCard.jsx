@@ -1,11 +1,11 @@
 import React from "react";
 import './FeaturedProjectCard.css';
 
-function FeaturedProjectCard({ title, description, image, technologies, githubLink, demoLink, demoIcon, webLink, webIcon, achievements }) {
+function FeaturedProjectCard({ title, description, image, imagePosition, technologies, githubLink, demoLink, demoIcon, webLink, webIcon, achievements }) {
     return (
         <div className="featured-project-card">
             <div className="project-image-container">
-                <img src={image} alt={title} className="project-image" loading="lazy" />
+                <img src={image} alt={title} className="project-image" loading="lazy" style={imagePosition ? { objectPosition: imagePosition } : undefined} />
                 <div className="project-overlay">
                     <div className="project-links">
                         {githubLink && (
