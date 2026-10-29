@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './FeaturedProjectCard.css';
 
-function FeaturedProjectCard({ title, description, image, imagePosition, technologies, githubLink, demoLink, demoIcon, webLink, webIcon, achievements }) {
+function FeaturedProjectCard({ projectId, title, description, image, imagePosition, technologies, githubLink, demoLink, demoIcon, webLink, webIcon, achievements }) {
     return (
         <div className="featured-project-card">
             <div className="project-image-container">
@@ -28,7 +29,12 @@ function FeaturedProjectCard({ title, description, image, imagePosition, technol
             </div>
 
             <div className="project-card-content">
-                <h3 className="project-title">{title}</h3>
+                <h3 className="project-title">
+                    {projectId ? (
+                        // The link stretches over the whole card (see .project-card-link::after)
+                        <Link to={`/project#${projectId}`} className="project-card-link">{title}</Link>
+                    ) : title}
+                </h3>
                 <p className="project-description">{description}</p>
 
                 <div className="project-achievements">

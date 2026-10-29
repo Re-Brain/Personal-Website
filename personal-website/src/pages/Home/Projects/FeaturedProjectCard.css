@@ -1,4 +1,5 @@
 .featured-project-card {
+    position: relative;
     background: var(--card-bg);
     overflow: hidden;
     transition: all 0.3s ease;
@@ -179,4 +180,34 @@
     .achievement-item {
         font-size: 0.85rem;
     }
+}
+
+/* The whole card is one big link to that project on the Projects page */
+.project-card-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-card-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.project-card-link:focus-visible::after {
+    outline: 3px solid var(--accent-color);
+    outline-offset: -3px;
+    border-radius: var(--radius-card);
+}
+
+/* The hover icons (GitHub, demo, website) stay clickable above the card link;
+   empty overlay space lets clicks through to it */
+.project-overlay {
+    z-index: 2;
+    pointer-events: none;
+}
+
+.project-overlay .project-link {
+    pointer-events: auto;
 }

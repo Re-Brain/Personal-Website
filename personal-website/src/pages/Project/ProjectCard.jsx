@@ -3,7 +3,8 @@ import TechStack from "./TechStack";
 import { useLanguage } from "../../contexts/LanguageContext";
 import translations from "../../translations.json";
 
-function ProjectCard({ 
+function ProjectCard({
+    id,
     title, 
     paragraphs, 
     techStack, 
@@ -29,7 +30,7 @@ function ProjectCard({
     };
 
     return (
-        <div className="project-container">
+        <div className="project-container" id={id}>
             {(videoSrc || images.length > 0) && (
                 <div className="project-display">
                     {videoSrc ? (

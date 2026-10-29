@@ -803,3 +803,29 @@ video {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ---- Deep links from the Home page (/project#furlong) ---- */
+.project-container {
+    /* Leave room for the sticky navigation bar when scrolled into view */
+    scroll-margin-top: 100px;
+}
+
+.project-container.project-highlight .project-detail {
+    animation: project-highlight 1.8s ease-out;
+}
+
+@keyframes project-highlight {
+    0%, 55% {
+        box-shadow: 0 0 0 3px var(--accent-color), 0 0 36px rgba(var(--accent-rgb), 0.5);
+    }
+    100% {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-container.project-highlight .project-detail {
+        animation: none;
+    }
+}

@@ -71,6 +71,7 @@ function Project()
 
     // Furlong Project data
     const furlongData = {
+        id: "furlong",
         title: language === 'th' && t.furlong.fullTitle ? t.furlong.fullTitle : "Furlong: A Platform to Visit and Support Retired Racehorses",
         paragraphs: language === 'th' && t.furlong.paragraph1 ? [
             t.furlong.paragraph1,
@@ -107,6 +108,7 @@ function Project()
 
     // Uma Descendant Project data
     const umaDescendantData = {
+        id: "uma-descendant",
         title: language === 'th' && t.umaDescendant.fullTitle ? t.umaDescendant.fullTitle : "Uma Descendant: Finding Racehorses with an Umamusume Bloodline",
         paragraphs: language === 'th' && t.umaDescendant.paragraph1 ? [
             t.umaDescendant.paragraph1,
@@ -143,6 +145,7 @@ function Project()
 
     // Air Guitar Project data
     const airGuitarData = {
+        id: "air-guitar",
         title: language === 'th' && t.airGuitar.fullTitle ? t.airGuitar.fullTitle : "Air Guitar Gloves Project – Hardware-based Guitar Simulation with Interactive Gloves and Mobile Game Integration",
         paragraphs: language === 'th' && t.airGuitar.paragraph1 ? [
             t.airGuitar.paragraph1,
@@ -168,6 +171,7 @@ function Project()
 
     // Nap Trap Project data
     const napTrapData = {
+        id: "nap-trap",
         title: language === 'th' && t.napTrap.fullTitle ? t.napTrap.fullTitle : "Nap Trap Project - Driver Drowsiness Detection System",
         paragraphs: language === 'th' && t.napTrap.paragraph1 ? [
             t.napTrap.paragraph1,
@@ -188,6 +192,7 @@ function Project()
 
     // Plant Database Project data
     const plantDatabaseData = {
+        id: "plant-database",
         title: language === 'th' && t.plantDatabase.fullTitle ? t.plantDatabase.fullTitle : "Rajamangalaphisek Education Park Plant Database",
         paragraphs: language === 'th' && t.plantDatabase.paragraph1 ? [
             t.plantDatabase.paragraph1,
@@ -215,6 +220,7 @@ function Project()
 
     // MILK Project data
     const milkData = {
+        id: "milk",
         title: language === 'th' && t.milk.fullTitle ? t.milk.fullTitle : "Third Year Project (Graduate Project) : Management and Identification for Livestock Keeping",
         paragraphs: language === 'th' && t.milk.paragraph1 ? [
             t.milk.paragraph1
@@ -229,6 +235,7 @@ function Project()
 
     // SwiftUI Project data
     const swiftUIData = {
+        id: "swift-ui",
         title: language === 'th' && t.swiftUI.fullTitle ? t.swiftUI.fullTitle : "APPs for Mobile Platforms Term Project",
         paragraphs: language === 'th' && t.swiftUI.paragraph1 ? [
             t.swiftUI.paragraph1
@@ -252,6 +259,7 @@ function Project()
 
     // Face Matching Project data
     const faceMatchingData = {
+        id: "face-matching",
         title: language === 'th' && t.faceMatching.fullTitle ? t.faceMatching.fullTitle : "Face-Matching-Program",
         paragraphs: language === 'th' && t.faceMatching.paragraph1 ? [
             t.faceMatching.paragraph1
@@ -265,6 +273,7 @@ function Project()
 
     // Green Waste Management Project data
     const greenWasteData = {
+        id: "green-waste",
         title: language === 'th' && t.greenWaste && t.greenWaste.fullTitle ? t.greenWaste.fullTitle : "Green Waste Management Database System Project",
         paragraphs: language === 'th' && t.greenWaste && t.greenWaste.paragraph1 
             ? [t.greenWaste.paragraph1, t.greenWaste.paragraph2, t.greenWaste.paragraph3]

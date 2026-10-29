@@ -13,6 +13,7 @@ function FeaturedProjects() {
     const t = translations[language].featuredProjects;
     const projects = [
         {
+            projectId: "uma-descendant",
             title: t.umaDescendant.title,
             description: t.umaDescendant.description,
             image: umaDescendantImg,
@@ -25,6 +26,7 @@ function FeaturedProjects() {
             achievements: t.umaDescendant.achievements
         },
         {
+            projectId: "furlong",
             title: t.furlong.title,
             description: t.furlong.description,
             image: furlongImg,
@@ -38,6 +40,7 @@ function FeaturedProjects() {
             achievements: t.furlong.achievements
         },
         {
+            projectId: "plant-database",
             title: t.plantDatabase.title,
             description: t.plantDatabase.description,
             image: plantDatabaseImg,
@@ -63,6 +66,7 @@ function FeaturedProjects() {
                 {projects.map((project, index) => (
                     <FeaturedProjectCard
                         key={index}
+                        projectId={project.projectId}
                         title={project.title}
                         description={project.description}
                         image={project.image}
